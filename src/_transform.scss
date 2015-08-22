@@ -1,0 +1,34 @@
+
+// _transform.scss
+
+/*
+ * A collection of mixins using the 'transform' properties
+ */
+
+/**
+* transform: rotate() mixin including vendor prefixed properties
+*
+* Example usage:
+*
+*   @include rotate(90deg);
+*/
+@mixin rotate($degrees) {
+  -ms-transform: rotate($degrees);
+  -webkit-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+
+/**
+ * transform: translateY() mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include translateY(50%);
+ */
+@mixin translateY($translation) {
+  -moz-transform: translateY($translation);
+  -ms-transform: translateY($translation);
+  -o-transform: translateY($translation);
+  -webkit-transform: translateY($translation);
+  transform: translateY($translation);
+}

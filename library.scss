@@ -1,0 +1,456 @@
+
+// _animation.scss
+
+/*
+ * A collection of mixins using the 'animation' properties
+ */
+
+/*
+ * animation-duration mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include animation-duration(1s);
+ */
+@mixin animation-duration($time) {
+  -moz-animation-duration: $time;
+  -ms-animation-duration: $time;
+  -webkit-animation-duration: $time;
+  animation-duration: $time;
+}
+
+/*
+ * animation-iteration-count mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include animation-iteration-count(infinite);
+ */
+@mixin animation-iteration-count($type) {
+  -moz-animation-iteration-count: $type;
+  -ms-animation-iteration-count: $type;
+  -webkit-animation-iteration-count: $type;
+  animation-iteration-count: $type;
+}
+
+/*
+ * animation-name mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include animation-name(spin);
+ */
+@mixin animation-name($name) {
+  -moz-animation-name: $name;
+  -ms-animation-name: $name;
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}
+
+/*
+ * animation-timing-function mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include animation-timing-function(linear);
+ */
+@mixin animation-timing-function($type) {
+  -moz-animation-timing-function: $type;
+  -ms-animation-timing-function: $type;
+  -webkit-animation-timing-function: $type;
+  animation-timing-function: $type;
+}
+
+
+// _border.scss
+
+/*
+ * A collection of mixins using the 'border' properties
+ */
+
+/**
+* border-radius mixin including vendor prefixed properties
+*
+* Example usage:
+*
+*   @include border-radius(10px);
+*/
+@mixin border-radius($radius) {
+ -moz-border-radius: $radius;
+ -webkit-border-radius: $radius;
+ border-radius: $radius;
+}
+
+
+// _box-shadow.scss
+
+/**
+ * A mixin which helps you to add depth to elements according to the Google Material Design spec:
+ * http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality
+ *
+ * Example usage:
+ *
+ *   @include box-shadow-helper(1);
+ */
+
+@mixin box-shadow-helper($level: 1){
+    @if $level == 1 {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    @else if $level == 2 {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    @else if $level == 3 {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    @else if $level == 4 {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    @else if $level == 5 {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    @else {
+      box-shadow: none;
+    }
+}
+
+
+// _box-sizing.scss
+
+/*
+ * A collection of mixins using the 'box-sizing' properties
+ */
+
+/**
+* box-sizing mixin including vendor prefixed properties
+*
+* Example usage:
+*
+*   @include box-sizing(border-box);
+*/
+@mixin box-sizing($type: border-box) {
+  -moz-box-sizing: $type;
+  -webkit-box-sizing: $type;
+  box-sizing: $type;
+}
+
+
+// _clearfix.scss
+
+/**
+ * Clear fix mixin for use with floats
+ *
+ * Example usage:
+ *
+ *   @include clearfix;
+ */
+@mixin clearfix {
+  zoom:1;
+  &:before,
+  &:after {
+    content:"";
+    display:table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+
+// _headings.scss
+
+/*
+ * A collection of headings mixins
+ */
+
+/**
+* Generic heading mixin
+*
+* Example usage:
+*
+*   @include heading(30px, #fff, #000, left, 20px 0);
+*/
+@mixin heading($fontSize, $color, $background, $textAlign, $padding) {
+ font-size: $fontSize;
+ padding: $padding;
+ color: $color;
+ background: $background;
+ text-align: $textAlign;
+}
+
+/**
+* h1 mixin
+*
+* Example usage:
+*
+*   @include h1(30px, #fff, #000, left, 20px 0);
+*/
+@mixin h1($fontSize: 40px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
+  @include heading($fontSize, $color, $background, $textAlign, $padding);
+}
+
+/**
+* h2 mixin
+*
+* Example usage:
+*
+*   @include h2(30px, #fff, #000, left, 20px 0);
+*/
+@mixin h2($fontSize: 30px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
+  @include heading($fontSize, $color, $background, $textAlign, $padding);
+}
+
+/**
+* h3 mixin
+*
+* Example usage:
+*
+*   @include h3(30px, #fff, #000, left, 20px 0);
+*/
+@mixin h3($fontSize: 20px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
+  @include heading($fontSize, $color, $background, $textAlign, $padding);
+}
+
+
+/**
+* h4 mixin
+*
+* Example usage:
+*
+*   @include h4(30px, #fff, #000, left, 20px 0);
+*/
+@mixin h4($fontSize: 14px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
+  @include heading($fontSize, $color, $background, $textAlign, $padding);
+}
+
+
+// _keyframes.scss
+
+/**
+ * Keyframe mixin based on 'transform' proptery with only 'from' and 'to' set
+ *
+ * Example usage:
+ *
+ *   @include keyframes-from-to-transform(spin, rotate(0deg), rotate(360deg));
+ */
+@mixin keyframes-from-to-transform($name, $from, $to) {
+  @-moz-keyframes $name {
+    from {
+      -moz-transform: $from;
+    }
+    to {
+      -moz-transform: $to;
+    }
+  }
+  @-webkit-keyframes $name {
+    from {
+      -webkit-transform: $from;
+    }
+    to {
+      -webkit-transform: $to;
+    }
+  }
+  @keyframes $name {
+    from {
+      transform: $from;
+    }
+    to {
+      transform: $to;
+    }
+  }
+}
+
+/**
+ * Keyframe mixin based on 'transform' proptery with '0%', '50%', and '100%' set
+ *
+ * Example usage:
+ *
+ *   @include keyframes-0-50-100-transform(spin, scale(1), scale(1.4), scale(1));
+ */
+@mixin keyframes-0-50-100-transform($name, $0, $50, $100) {
+  @-moz-keyframes $name {
+    0% {
+      -moz-transform: $0;
+    }
+    50% {
+      -moz-transform: $50;
+    }
+    100% {
+      -moz-transform: $100;
+    }
+  }
+  @-webkit-keyframes $name {
+    0% {
+      -webkit-transform: $0;
+    }
+    50% {
+      -webkit-transform: $50;
+    }
+    100% {
+      -webkit-transform: $100;
+    }
+  }
+  @keyframes $name {
+    0% {
+      transform: $0;
+    }
+    50% {
+      transform: $50;
+    }
+    100% {
+      transform: $100;
+    }
+  }
+}
+
+
+// _media-queries.scss
+
+/**
+ * Apply styles to an element above a certain screen size
+ *
+ * Example usage:
+ *
+ *   @include above-breakpoint(900px) {
+ *     background-color: #ff0000;
+ *   }
+ */
+@mixin above-breakpoint($size) {
+  @media screen and (min-width: $size) { @content; }
+}
+
+/**
+ * Apply styles to an element below a certain screen size
+ *
+ * Example usage:
+ *
+ *   @include below-breakpoint(900px) {
+ *     background-color: #00ff00;
+ *   }
+ */
+@mixin below-breakpoint($size) {
+  @media screen and (max-width: $size) { @content; }
+}
+
+
+// _text-areas.scss
+
+/*
+* A collection of text area mixins
+*/
+
+/**
+* padded text area mixin
+*
+* Example usage:
+*
+*   @include translateY(50%);
+*/
+@mixin padded-text-area($fontFamily, $fontSize, $lineHeight, $padding,
+                  $wordSpacing, $borderBottom, $borderTop, $color,
+                  $backgroundColor) {
+  font-family: $fontFamily;
+  line-height: $lineHeight;
+  padding: $padding;
+  border-top: $borderTop;
+  border-bottom: $borderBottom;
+  font-size: $fontSize;
+  word-spacing: $wordSpacing;
+  text-align: $textAlign;
+  color: $color;
+  background-color: $backgroundColor;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+
+  /* Non standard for webkit */
+  word-break: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+
+// _transform.scss
+
+/*
+ * A collection of mixins using the 'transform' properties
+ */
+
+/**
+* transform: rotate() mixin including vendor prefixed properties
+*
+* Example usage:
+*
+*   @include rotate(90deg);
+*/
+@mixin rotate($degrees) {
+  -ms-transform: rotate($degrees);
+  -webkit-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+
+/**
+ * transform: translateY() mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include translateY(50%);
+ */
+@mixin translateY($translation) {
+  -moz-transform: translateY($translation);
+  -ms-transform: translateY($translation);
+  -o-transform: translateY($translation);
+  -webkit-transform: translateY($translation);
+  transform: translateY($translation);
+}
+
+
+// _transition.scss
+
+/*
+ * A collection of mixins using the 'transition' properties
+ */
+
+/**
+ * transition mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include transition(top, 1s, ease);
+ */
+@mixin transition($type, $time, $curve) {
+  -o-transition: $type $time $curve;
+  -moz-transition: $type $time $curve;
+  -webkit-transition: $type $time $curve;
+  transition: $type $time $curve;
+}
+
+/**
+ * transition-delay mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include transition-delay(1s);
+ */
+@mixin transition-delay($time) {
+  -webkit-transition-delay: $time;
+  transition-delay: $time;
+}
+
+/**
+ * transition-duration mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include transition-duration(.4s);
+ */
+@mixin transition-duration($time) {
+  -moz-transition-duration: $time;
+  -o-transition-duration: $time;
+  -webkit-transition-duration: $time;
+  transition-duration: $time;
+}

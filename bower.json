@@ -1,0 +1,26 @@
+{
+  "name": "a-useful-sass-library",
+  "version": "1.0.0",
+  "main": [
+    "library.scss"
+  ],
+  "homepage": "https://github.com/AdamMurray/AUsefulSassLibrary",
+  "authors": [
+    "Adam Murray <adam.john.campbell.murray@gmail.com>"
+  ],
+  "description": "A library of mixins and classes for use in projects using SASS",
+  "license": "MIT",
+  "keywords": [
+    "sass",
+    "css",
+    "mixins",
+    "library"
+  ],
+  "ignore": [
+    "node_modules",
+    "*.js",
+    "*.css",
+    "package.json",
+    ".gitignore"
+  ]
+}

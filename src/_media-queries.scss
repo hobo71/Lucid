@@ -1,0 +1,28 @@
+
+// _media-queries.scss
+
+/**
+ * Apply styles to an element above a certain screen size
+ *
+ * Example usage:
+ *
+ *   @include above-breakpoint(900px) {
+ *     background-color: #ff0000;
+ *   }
+ */
+@mixin above-breakpoint($size) {
+  @media screen and (min-width: $size) { @content; }
+}
+
+/**
+ * Apply styles to an element below a certain screen size
+ *
+ * Example usage:
+ *
+ *   @include below-breakpoint(900px) {
+ *     background-color: #00ff00;
+ *   }
+ */
+@mixin below-breakpoint($size) {
+  @media screen and (max-width: $size) { @content; }
+}

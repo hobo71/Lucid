@@ -1,0 +1,62 @@
+
+// _animation.scss
+
+/*
+ * A collection of mixins using the 'animation' properties
+ */
+
+/*
+ * animation-duration mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include animation-duration(1s);
+ */
+@mixin animation-duration($time) {
+  -moz-animation-duration: $time;
+  -ms-animation-duration: $time;
+  -webkit-animation-duration: $time;
+  animation-duration: $time;
+}
+
+/*
+ * animation-iteration-count mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include animation-iteration-count(infinite);
+ */
+@mixin animation-iteration-count($type) {
+  -moz-animation-iteration-count: $type;
+  -ms-animation-iteration-count: $type;
+  -webkit-animation-iteration-count: $type;
+  animation-iteration-count: $type;
+}
+
+/*
+ * animation-name mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include animation-name(spin);
+ */
+@mixin animation-name($name) {
+  -moz-animation-name: $name;
+  -ms-animation-name: $name;
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}
+
+/*
+ * animation-timing-function mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include animation-timing-function(linear);
+ */
+@mixin animation-timing-function($type) {
+  -moz-animation-timing-function: $type;
+  -ms-animation-timing-function: $type;
+  -webkit-animation-timing-function: $type;
+  animation-timing-function: $type;
+}

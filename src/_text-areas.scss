@@ -1,0 +1,39 @@
+
+// _text-areas.scss
+
+/*
+* A collection of text area mixins
+*/
+
+/**
+* padded text area mixin
+*
+* Example usage:
+*
+*   @include translateY(50%);
+*/
+@mixin padded-text-area($fontFamily, $fontSize, $lineHeight, $padding,
+                  $wordSpacing, $borderBottom, $borderTop, $color,
+                  $backgroundColor) {
+  font-family: $fontFamily;
+  line-height: $lineHeight;
+  padding: $padding;
+  border-top: $borderTop;
+  border-bottom: $borderBottom;
+  font-size: $fontSize;
+  word-spacing: $wordSpacing;
+  text-align: $textAlign;
+  color: $color;
+  background-color: $backgroundColor;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+
+  /* Non standard for webkit */
+  word-break: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}

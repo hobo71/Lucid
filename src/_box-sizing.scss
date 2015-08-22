@@ -1,0 +1,19 @@
+
+// _box-sizing.scss
+
+/*
+ * A collection of mixins using the 'box-sizing' properties
+ */
+
+/**
+* box-sizing mixin including vendor prefixed properties
+*
+* Example usage:
+*
+*   @include box-sizing(border-box);
+*/
+@mixin box-sizing($type: border-box) {
+  -moz-box-sizing: $type;
+  -webkit-box-sizing: $type;
+  box-sizing: $type;
+}

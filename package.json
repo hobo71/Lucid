@@ -1,0 +1,29 @@
+{
+  "name": "a-useful-sass-library",
+  "version": "1.0.0",
+  "description": "A library of mixins and classes for use in projects using SASS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamMurray/AUsefulSassLibrary.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "library"
+  ],
+  "author": "Adam Murray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamMurray/AUsefulSassLibrary/issues"
+  },
+  "homepage": "https://github.com/AdamMurray/AUsefulSassLibrary#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
