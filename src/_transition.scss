@@ -44,3 +44,17 @@
   -webkit-transition-duration: $time;
   transition-duration: $time;
 }
+
+/**
+ * transition mixin which accepts an arbitrary number of arguments
+ *
+ * Example usage:
+ *
+ *   @include transition-properties(1s top ease .4s, .4s color linear 0s);
+ */
+@mixin transition-properties($arguments...) {
+  -webkit-transition: $arguments;
+  -moz-transition: $arguments;
+  -o-transition: $arguments;
+  transition: $arguments;
+}
