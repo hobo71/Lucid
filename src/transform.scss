@@ -10,9 +10,9 @@
 *
 * Example usage:
 *
-*   @include rotate(90deg);
+*   @include ausl__rotate(90deg);
 */
-@mixin rotate($degrees) {
+@mixin ausl__rotate($degrees) {
   -ms-transform: rotate($degrees);
   -webkit-transform: rotate($degrees);
   transform: rotate($degrees);
@@ -23,9 +23,9 @@
  *
  * Example usage:
  *
- *   @include translateY(50%);
+ *   @include ausl__translateY(50%);
  */
-@mixin translateY($translation) {
+@mixin ausl__translateY($translation) {
   -moz-transform: translateY($translation);
   -ms-transform: translateY($translation);
   -o-transform: translateY($translation);

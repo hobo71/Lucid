@@ -1,0 +1,63 @@
+
+// centering.scss
+
+/*
+ * A collection of mixins for centering elements
+ */
+
+// Vertical centering
+// -----------------------------------------------------------------------------
+
+/**
+* Vertical centering mixin for outer element
+*
+* Jade template:
+*   .outer
+*     .middle
+*       .inner
+*
+* Example usage:
+*
+*   @include ausl__center-vertical-outer-element;
+*/
+@mixin ausl__center-vertical-outer-element {
+  display: table;
+  position: absolute;
+  width: 100%;
+}
+
+/**
+* Vertical centering mixin for middle element
+*
+* Jade template:
+*   .outer
+*     .middle
+*       .inner
+*
+* Example usage:
+*
+*   @include ausl__center-vertical-middle-element;
+*/
+@mixin ausl__center-vertical-middle-element {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/**
+* Vertical centering mixin for inner element
+*
+* Jade template:
+*   .outer
+*     .middle
+*       .inner
+*
+* Example usage:
+*
+*   @include ausl__center-vertical-inner-element;
+*/
+@mixin ausl__center-vertical-inner-element($height) {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: $height;
+}

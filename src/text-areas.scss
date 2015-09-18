@@ -10,9 +10,9 @@
 *
 * Example usage:
 *
-*   @include translateY(50%);
+*   @include ausl__padded-text-area(...);
 */
-@mixin padded-text-area($fontFamily, $fontSize, $lineHeight, $padding,
+@mixin ausl__padded-text-area($fontFamily, $fontSize, $lineHeight, $padding,
                   $wordSpacing, $borderBottom, $borderTop, $color,
                   $backgroundColor) {
   font-family: $fontFamily;

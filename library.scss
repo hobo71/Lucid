@@ -10,9 +10,9 @@
  *
  * Example usage:
  *
- *   @include animation-duration(1s);
+ *   @include ausl__animation-duration(1s);
  */
-@mixin animation-duration($time) {
+@mixin ausl__animation-duration($time) {
   -moz-animation-duration: $time;
   -ms-animation-duration: $time;
   -webkit-animation-duration: $time;
@@ -24,9 +24,9 @@
  *
  * Example usage:
  *
- *   @include animation-iteration-count(infinite);
+ *   @include ausl__animation-iteration-count(infinite);
  */
-@mixin animation-iteration-count($type) {
+@mixin ausl__animation-iteration-count($type) {
   -moz-animation-iteration-count: $type;
   -ms-animation-iteration-count: $type;
   -webkit-animation-iteration-count: $type;
@@ -38,9 +38,9 @@
  *
  * Example usage:
  *
- *   @include animation-name(spin);
+ *   @include ausl__animation-name(spin);
  */
-@mixin animation-name($name) {
+@mixin ausl__animation-name($name) {
   -moz-animation-name: $name;
   -ms-animation-name: $name;
   -webkit-animation-name: $name;
@@ -52,9 +52,9 @@
  *
  * Example usage:
  *
- *   @include animation-timing-function(linear);
+ *   @include ausl__animation-timing-function(linear);
  */
-@mixin animation-timing-function($type) {
+@mixin ausl__animation-timing-function($type) {
   -moz-animation-timing-function: $type;
   -ms-animation-timing-function: $type;
   -webkit-animation-timing-function: $type;
@@ -73,9 +73,9 @@
 *
 * Example usage:
 *
-*   @include border-radius(10px);
+*   @include ausl__border-radius(10px);
 */
-@mixin border-radius($radius) {
+@mixin ausl__border-radius($radius) {
  -moz-border-radius: $radius;
  -webkit-border-radius: $radius;
  border-radius: $radius;
@@ -90,10 +90,10 @@
  *
  * Example usage:
  *
- *   @include box-shadow-helper(1);
+ *   @include ausl__box-shadow-helper(1);
  */
 
-@mixin box-shadow-helper($level: 1){
+@mixin ausl__box-shadow-helper($level: 1){
     @if $level == 1 {
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
@@ -126,12 +126,76 @@
 *
 * Example usage:
 *
-*   @include box-sizing(border-box);
+*   @include ausl__box-sizing(border-box);
 */
-@mixin box-sizing($type: border-box) {
+@mixin ausl__box-sizing($type: border-box) {
   -moz-box-sizing: $type;
   -webkit-box-sizing: $type;
   box-sizing: $type;
+}
+
+
+// centering.scss
+
+/*
+ * A collection of mixins for centering elements
+ */
+
+// Vertical centering
+// -----------------------------------------------------------------------------
+
+/**
+* Vertical centering mixin for outer element
+*
+* Jade template:
+*   .outer
+*     .middle
+*       .inner
+*
+* Example usage:
+*
+*   @include ausl__center-vertical-outer-element;
+*/
+@mixin ausl__center-vertical-outer-element {
+  display: table;
+  position: absolute;
+  width: 100%;
+}
+
+/**
+* Vertical centering mixin for middle element
+*
+* Jade template:
+*   .outer
+*     .middle
+*       .inner
+*
+* Example usage:
+*
+*   @include ausl__center-vertical-middle-element;
+*/
+@mixin ausl__center-vertical-middle-element {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/**
+* Vertical centering mixin for inner element
+*
+* Jade template:
+*   .outer
+*     .middle
+*       .inner
+*
+* Example usage:
+*
+*   @include ausl__center-vertical-inner-element;
+*/
+@mixin ausl__center-vertical-inner-element($height) {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: $height;
 }
 
 
@@ -142,9 +206,9 @@
  *
  * Example usage:
  *
- *   @include clearfix;
+ *   @include ausl__clearfix;
  */
-@mixin clearfix {
+@mixin ausl__clearfix {
   zoom:1;
   &:before,
   &:after {
@@ -169,9 +233,9 @@
 *
 * Example usage:
 *
-*   @include heading(30px, #fff, #000, left, 20px 0);
+*   @include ausl__heading(30px, #fff, #000, left, 20px 0);
 */
-@mixin heading($fontSize, $color, $background, $textAlign, $padding) {
+@mixin ausl__heading($fontSize, $color, $background, $textAlign, $padding) {
  font-size: $fontSize;
  padding: $padding;
  color: $color;
@@ -184,10 +248,10 @@
 *
 * Example usage:
 *
-*   @include h1(30px, #fff, #000, left, 20px 0);
+*   @include ausl__h1(30px, #fff, #000, left, 20px 0);
 */
-@mixin h1($fontSize: 40px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
-  @include heading($fontSize, $color, $background, $textAlign, $padding);
+@mixin ausl__h1($fontSize: 40px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
+  @include ausl__heading($fontSize, $color, $background, $textAlign, $padding);
 }
 
 /**
@@ -195,10 +259,10 @@
 *
 * Example usage:
 *
-*   @include h2(30px, #fff, #000, left, 20px 0);
+*   @include ausl__h2(30px, #fff, #000, left, 20px 0);
 */
-@mixin h2($fontSize: 30px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
-  @include heading($fontSize, $color, $background, $textAlign, $padding);
+@mixin ausl__h2($fontSize: 30px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
+  @include ausl__heading($fontSize, $color, $background, $textAlign, $padding);
 }
 
 /**
@@ -206,10 +270,10 @@
 *
 * Example usage:
 *
-*   @include h3(30px, #fff, #000, left, 20px 0);
+*   @include ausl__h3(30px, #fff, #000, left, 20px 0);
 */
-@mixin h3($fontSize: 20px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
-  @include heading($fontSize, $color, $background, $textAlign, $padding);
+@mixin ausl__h3($fontSize: 20px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
+  @include ausl__heading($fontSize, $color, $background, $textAlign, $padding);
 }
 
 
@@ -218,90 +282,10 @@
 *
 * Example usage:
 *
-*   @include h4(30px, #fff, #000, left, 20px 0);
+*   @include ausl__h4(30px, #fff, #000, left, 20px 0);
 */
-@mixin h4($fontSize: 14px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
+@mixin ausl__h4($fontSize: 14px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
   @include heading($fontSize, $color, $background, $textAlign, $padding);
-}
-
-
-// _keyframes.scss
-
-/**
- * Keyframe mixin based on 'transform' proptery with only 'from' and 'to' set
- *
- * Example usage:
- *
- *   @include keyframes-from-to-transform(spin, rotate(0deg), rotate(360deg));
- */
-@mixin keyframes-from-to-transform($name, $from, $to) {
-  @-moz-keyframes $name {
-    from {
-      -moz-transform: $from;
-    }
-    to {
-      -moz-transform: $to;
-    }
-  }
-  @-webkit-keyframes $name {
-    from {
-      -webkit-transform: $from;
-    }
-    to {
-      -webkit-transform: $to;
-    }
-  }
-  @keyframes $name {
-    from {
-      transform: $from;
-    }
-    to {
-      transform: $to;
-    }
-  }
-}
-
-/**
- * Keyframe mixin based on 'transform' proptery with '0%', '50%', and '100%' set
- *
- * Example usage:
- *
- *   @include keyframes-0-50-100-transform(spin, scale(1), scale(1.4), scale(1));
- */
-@mixin keyframes-0-50-100-transform($name, $0, $50, $100) {
-  @-moz-keyframes $name {
-    0% {
-      -moz-transform: $0;
-    }
-    50% {
-      -moz-transform: $50;
-    }
-    100% {
-      -moz-transform: $100;
-    }
-  }
-  @-webkit-keyframes $name {
-    0% {
-      -webkit-transform: $0;
-    }
-    50% {
-      -webkit-transform: $50;
-    }
-    100% {
-      -webkit-transform: $100;
-    }
-  }
-  @keyframes $name {
-    0% {
-      transform: $0;
-    }
-    50% {
-      transform: $50;
-    }
-    100% {
-      transform: $100;
-    }
-  }
 }
 
 
@@ -312,11 +296,11 @@
  *
  * Example usage:
  *
- *   @include above-breakpoint(900px) {
+ *   @include ausl__above-breakpoint(900px) {
  *     background-color: #ff0000;
  *   }
  */
-@mixin above-breakpoint($size) {
+@mixin ausl__above-breakpoint($size) {
   @media screen and (min-width: $size) { @content; }
 }
 
@@ -325,11 +309,11 @@
  *
  * Example usage:
  *
- *   @include below-breakpoint(900px) {
+ *   @include ausl__below-breakpoint(900px) {
  *     background-color: #00ff00;
  *   }
  */
-@mixin below-breakpoint($size) {
+@mixin ausl__below-breakpoint($size) {
   @media screen and (max-width: $size) { @content; }
 }
 
@@ -345,9 +329,9 @@
 *
 * Example usage:
 *
-*   @include translateY(50%);
+*   @include ausl__padded-text-area(...);
 */
-@mixin padded-text-area($fontFamily, $fontSize, $lineHeight, $padding,
+@mixin ausl__padded-text-area($fontFamily, $fontSize, $lineHeight, $padding,
                   $wordSpacing, $borderBottom, $borderTop, $color,
                   $backgroundColor) {
   font-family: $fontFamily;
@@ -385,9 +369,9 @@
 *
 * Example usage:
 *
-*   @include rotate(90deg);
+*   @include ausl__rotate(90deg);
 */
-@mixin rotate($degrees) {
+@mixin ausl__rotate($degrees) {
   -ms-transform: rotate($degrees);
   -webkit-transform: rotate($degrees);
   transform: rotate($degrees);
@@ -398,9 +382,9 @@
  *
  * Example usage:
  *
- *   @include translateY(50%);
+ *   @include ausl__translateY(50%);
  */
-@mixin translateY($translation) {
+@mixin ausl__translateY($translation) {
   -moz-transform: translateY($translation);
   -ms-transform: translateY($translation);
   -o-transform: translateY($translation);
@@ -420,9 +404,9 @@
  *
  * Example usage:
  *
- *   @include transition(top, 1s, ease);
+ *   @include ausl__transition(top, 1s, ease);
  */
-@mixin transition($type, $time, $curve) {
+@mixin ausl__transition($type, $time, $curve) {
   -o-transition: $type $time $curve;
   -moz-transition: $type $time $curve;
   -webkit-transition: $type $time $curve;
@@ -434,9 +418,9 @@
  *
  * Example usage:
  *
- *   @include transition-delay(1s);
+ *   @include ausl__transition-delay(1s);
  */
-@mixin transition-delay($time) {
+@mixin ausl__transition-delay($time) {
   -webkit-transition-delay: $time;
   transition-delay: $time;
 }
@@ -446,9 +430,9 @@
  *
  * Example usage:
  *
- *   @include transition-duration(.4s);
+ *   @include ausl__transition-duration(.4s);
  */
-@mixin transition-duration($time) {
+@mixin ausl__transition-duration($time) {
   -moz-transition-duration: $time;
   -o-transition-duration: $time;
   -webkit-transition-duration: $time;
@@ -460,11 +444,91 @@
  *
  * Example usage:
  *
- *   @include transition-properties(1s top ease .4s, .4s color linear 0s);
+ *   @include ausl__transition-properties(1s top ease .4s, .4s color linear 0s);
  */
-@mixin transition-properties($arguments...) {
+@mixin ausl__transition-properties($arguments...) {
   -webkit-transition: $arguments;
   -moz-transition: $arguments;
   -o-transition: $arguments;
   transition: $arguments;
+}
+
+
+// _keyframes.scss
+
+/**
+ * Keyframe mixin based on 'transform' proptery with only 'from' and 'to' set
+ *
+ * Example usage:
+ *
+ *   @include ausl__keyframes-from-to-transform(spin, rotate(0deg), rotate(360deg));
+ */
+@mixin ausl__keyframes-from-to-transform($name, $from, $to) {
+  @-moz-keyframes $name {
+    from {
+      -moz-transform: $from;
+    }
+    to {
+      -moz-transform: $to;
+    }
+  }
+  @-webkit-keyframes $name {
+    from {
+      -webkit-transform: $from;
+    }
+    to {
+      -webkit-transform: $to;
+    }
+  }
+  @keyframes $name {
+    from {
+      transform: $from;
+    }
+    to {
+      transform: $to;
+    }
+  }
+}
+
+/**
+ * Keyframe mixin based on 'transform' proptery with '0%', '50%', and '100%' set
+ *
+ * Example usage:
+ *
+ *   @include ausl__keyframes-0-50-100-transform(spin, scale(1), scale(1.4), scale(1));
+ */
+@mixin ausl__keyframes-0-50-100-transform($name, $0, $50, $100) {
+  @-moz-keyframes $name {
+    0% {
+      -moz-transform: $0;
+    }
+    50% {
+      -moz-transform: $50;
+    }
+    100% {
+      -moz-transform: $100;
+    }
+  }
+  @-webkit-keyframes $name {
+    0% {
+      -webkit-transform: $0;
+    }
+    50% {
+      -webkit-transform: $50;
+    }
+    100% {
+      -webkit-transform: $100;
+    }
+  }
+  @keyframes $name {
+    0% {
+      transform: $0;
+    }
+    50% {
+      transform: $50;
+    }
+    100% {
+      transform: $100;
+    }
+  }
 }

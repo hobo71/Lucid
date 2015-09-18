@@ -1,0 +1,229 @@
+/*
+ * A collection of mixins using the 'animation' properties
+ */
+/*
+ * animation-duration mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include ausl__animation-duration(1s);
+ */
+/*
+ * animation-iteration-count mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include ausl__animation-iteration-count(infinite);
+ */
+/*
+ * animation-name mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include ausl__animation-name(spin);
+ */
+/*
+ * animation-timing-function mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include ausl__animation-timing-function(linear);
+ */
+
+/*
+ * A collection of mixins using the 'border' properties
+ */
+/**
+* border-radius mixin including vendor prefixed properties
+*
+* Example usage:
+*
+*   @include ausl__border-radius(10px);
+*/
+
+/**
+ * A mixin which helps you to add depth to elements according to the Google Material Design spec:
+ * http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality
+ *
+ * Example usage:
+ *
+ *   @include ausl__box-shadow-helper(1);
+ */
+
+/*
+ * A collection of mixins using the 'box-sizing' properties
+ */
+/**
+* box-sizing mixin including vendor prefixed properties
+*
+* Example usage:
+*
+*   @include ausl__box-sizing(border-box);
+*/
+
+/*
+ * A collection of mixins for centering elements
+ */
+/**
+* Vertical centering mixin for outer element
+*
+* Jade template:
+*   .outer
+*     .middle
+*       .inner
+*
+* Example usage:
+*
+*   @include ausl__center-vertical-outer-element;
+*/
+/**
+* Vertical centering mixin for middle element
+*
+* Jade template:
+*   .outer
+*     .middle
+*       .inner
+*
+* Example usage:
+*
+*   @include ausl__center-vertical-middle-element;
+*/
+/**
+* Vertical centering mixin for inner element
+*
+* Jade template:
+*   .outer
+*     .middle
+*       .inner
+*
+* Example usage:
+*
+*   @include ausl__center-vertical-inner-element;
+*/
+
+/**
+ * Clear fix mixin for use with floats
+ *
+ * Example usage:
+ *
+ *   @include ausl__clearfix;
+ */
+
+/*
+ * A collection of headings mixins
+ */
+/**
+* Generic heading mixin
+*
+* Example usage:
+*
+*   @include ausl__heading(30px, #fff, #000, left, 20px 0);
+*/
+/**
+* h1 mixin
+*
+* Example usage:
+*
+*   @include ausl__h1(30px, #fff, #000, left, 20px 0);
+*/
+/**
+* h2 mixin
+*
+* Example usage:
+*
+*   @include ausl__h2(30px, #fff, #000, left, 20px 0);
+*/
+/**
+* h3 mixin
+*
+* Example usage:
+*
+*   @include ausl__h3(30px, #fff, #000, left, 20px 0);
+*/
+/**
+* h4 mixin
+*
+* Example usage:
+*
+*   @include ausl__h4(30px, #fff, #000, left, 20px 0);
+*/
+
+/**
+ * Apply styles to an element above a certain screen size
+ *
+ * Example usage:
+ *
+ *   @include ausl__above-breakpoint(900px) {
+ *     background-color: #ff0000;
+ *   }
+ */
+/**
+ * Apply styles to an element below a certain screen size
+ *
+ * Example usage:
+ *
+ *   @include ausl__below-breakpoint(900px) {
+ *     background-color: #00ff00;
+ *   }
+ */
+
+/*
+* A collection of text area mixins
+*/
+/**
+* padded text area mixin
+*
+* Example usage:
+*
+*   @include ausl__padded-text-area(...);
+*/
+
+/*
+ * A collection of mixins using the 'transform' properties
+ */
+/**
+* transform: rotate() mixin including vendor prefixed properties
+*
+* Example usage:
+*
+*   @include ausl__rotate(90deg);
+*/
+/**
+ * transform: translateY() mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include ausl__translateY(50%);
+ */
+
+/*
+ * A collection of mixins using the 'transition' properties
+ */
+/**
+ * transition mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include ausl__transition(top, 1s, ease);
+ */
+/**
+ * transition-delay mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include ausl__transition-delay(1s);
+ */
+/**
+ * transition-duration mixin including vendor prefixed properties
+ *
+ * Example usage:
+ *
+ *   @include ausl__transition-duration(.4s);
+ */
+/**
+ * transition mixin which accepts an arbitrary number of arguments
+ *
+ * Example usage:
+ *
+ *   @include ausl__transition-properties(1s top ease .4s, .4s color linear 0s);
+ */

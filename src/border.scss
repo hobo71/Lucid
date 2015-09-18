@@ -10,9 +10,9 @@
 *
 * Example usage:
 *
-*   @include border-radius(10px);
+*   @include ausl__border-radius(10px);
 */
-@mixin border-radius($radius) {
+@mixin ausl__border-radius($radius) {
  -moz-border-radius: $radius;
  -webkit-border-radius: $radius;
  border-radius: $radius;

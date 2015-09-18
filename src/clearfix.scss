@@ -6,9 +6,9 @@
  *
  * Example usage:
  *
- *   @include clearfix;
+ *   @include ausl__clearfix;
  */
-@mixin clearfix {
+@mixin ausl__clearfix {
   zoom:1;
   &:before,
   &:after {

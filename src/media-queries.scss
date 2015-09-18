@@ -6,11 +6,11 @@
  *
  * Example usage:
  *
- *   @include above-breakpoint(900px) {
+ *   @include ausl__above-breakpoint(900px) {
  *     background-color: #ff0000;
  *   }
  */
-@mixin above-breakpoint($size) {
+@mixin ausl__above-breakpoint($size) {
   @media screen and (min-width: $size) { @content; }
 }
 
@@ -19,10 +19,10 @@
  *
  * Example usage:
  *
- *   @include below-breakpoint(900px) {
+ *   @include ausl__below-breakpoint(900px) {
  *     background-color: #00ff00;
  *   }
  */
-@mixin below-breakpoint($size) {
+@mixin ausl__below-breakpoint($size) {
   @media screen and (max-width: $size) { @content; }
 }

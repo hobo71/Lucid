@@ -6,9 +6,9 @@
  *
  * Example usage:
  *
- *   @include keyframes-from-to-transform(spin, rotate(0deg), rotate(360deg));
+ *   @include ausl__keyframes-from-to-transform(spin, rotate(0deg), rotate(360deg));
  */
-@mixin keyframes-from-to-transform($name, $from, $to) {
+@mixin ausl__keyframes-from-to-transform($name, $from, $to) {
   @-moz-keyframes $name {
     from {
       -moz-transform: $from;
@@ -40,9 +40,9 @@
  *
  * Example usage:
  *
- *   @include keyframes-0-50-100-transform(spin, scale(1), scale(1.4), scale(1));
+ *   @include ausl__keyframes-0-50-100-transform(spin, scale(1), scale(1.4), scale(1));
  */
-@mixin keyframes-0-50-100-transform($name, $0, $50, $100) {
+@mixin ausl__keyframes-0-50-100-transform($name, $0, $50, $100) {
   @-moz-keyframes $name {
     0% {
       -moz-transform: $0;
