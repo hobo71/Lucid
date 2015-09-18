@@ -413,7 +413,7 @@
 */
 @mixin ausl__padded-text-area($fontFamily, $fontSize, $lineHeight, $padding,
                   $wordSpacing, $borderBottom, $borderTop, $color,
-                  $backgroundColor) {
+                  $backgroundColor, $textAlign) {
   font-family: $fontFamily;
   line-height: $lineHeight;
   padding: $padding;
