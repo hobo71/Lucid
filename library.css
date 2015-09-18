@@ -149,6 +149,21 @@
 */
 
 /**
+ * Keyframe mixin based on 'transform' proptery with only 'from' and 'to' set
+ *
+ * Example usage:
+ *
+ *   @include ausl__keyframes-from-to-transform(spin, rotate(0deg), rotate(360deg));
+ */
+/**
+ * Keyframe mixin based on 'transform' proptery with '0%', '50%', and '100%' set
+ *
+ * Example usage:
+ *
+ *   @include ausl__keyframes-0-50-100-transform(spin, scale(1), scale(1.4), scale(1));
+ */
+
+/**
  * Apply styles to an element above a certain screen size
  *
  * Example usage:

@@ -289,6 +289,86 @@
 }
 
 
+// _keyframes.scss
+
+/**
+ * Keyframe mixin based on 'transform' proptery with only 'from' and 'to' set
+ *
+ * Example usage:
+ *
+ *   @include ausl__keyframes-from-to-transform(spin, rotate(0deg), rotate(360deg));
+ */
+@mixin ausl__keyframes-from-to-transform($name, $from, $to) {
+  @-moz-keyframes $name {
+    from {
+      -moz-transform: $from;
+    }
+    to {
+      -moz-transform: $to;
+    }
+  }
+  @-webkit-keyframes $name {
+    from {
+      -webkit-transform: $from;
+    }
+    to {
+      -webkit-transform: $to;
+    }
+  }
+  @keyframes $name {
+    from {
+      transform: $from;
+    }
+    to {
+      transform: $to;
+    }
+  }
+}
+
+/**
+ * Keyframe mixin based on 'transform' proptery with '0%', '50%', and '100%' set
+ *
+ * Example usage:
+ *
+ *   @include ausl__keyframes-0-50-100-transform(spin, scale(1), scale(1.4), scale(1));
+ */
+// @mixin ausl__keyframes-three-stage-transform($name, $a0, $a50, $a1a00) {
+//   @-moz-keyframes #{$name} {
+//     0% {
+//       -moz-transform: #{$0};
+//     }
+//     50% {
+//       -moz-transform: #{$50};
+//     }
+//     100% {
+//       -moz-transform: #{$100};
+//     }
+//   }
+//   @-webkit-keyframes #{$name} {
+//     0% {
+//       -webkit-transform: $0;
+//     }
+//     50% {
+//       -webkit-transform: $50;
+//     }
+//     100% {
+//       -webkit-transform: $100;
+//     }
+//   }
+//   @keyframes #{$name} {
+//     0% {
+//       transform: $0;
+//     }
+//     50% {
+//       transform: $50;
+//     }
+//     100% {
+//       transform: $100;
+//     }
+//   }
+// }
+
+
 // _media-queries.scss
 
 /**
@@ -451,84 +531,4 @@
   -moz-transition: $arguments;
   -o-transition: $arguments;
   transition: $arguments;
-}
-
-
-// _keyframes.scss
-
-/**
- * Keyframe mixin based on 'transform' proptery with only 'from' and 'to' set
- *
- * Example usage:
- *
- *   @include ausl__keyframes-from-to-transform(spin, rotate(0deg), rotate(360deg));
- */
-@mixin ausl__keyframes-from-to-transform($name, $from, $to) {
-  @-moz-keyframes $name {
-    from {
-      -moz-transform: $from;
-    }
-    to {
-      -moz-transform: $to;
-    }
-  }
-  @-webkit-keyframes $name {
-    from {
-      -webkit-transform: $from;
-    }
-    to {
-      -webkit-transform: $to;
-    }
-  }
-  @keyframes $name {
-    from {
-      transform: $from;
-    }
-    to {
-      transform: $to;
-    }
-  }
-}
-
-/**
- * Keyframe mixin based on 'transform' proptery with '0%', '50%', and '100%' set
- *
- * Example usage:
- *
- *   @include ausl__keyframes-0-50-100-transform(spin, scale(1), scale(1.4), scale(1));
- */
-@mixin ausl__keyframes-0-50-100-transform($name, $0, $50, $100) {
-  @-moz-keyframes $name {
-    0% {
-      -moz-transform: $0;
-    }
-    50% {
-      -moz-transform: $50;
-    }
-    100% {
-      -moz-transform: $100;
-    }
-  }
-  @-webkit-keyframes $name {
-    0% {
-      -webkit-transform: $0;
-    }
-    50% {
-      -webkit-transform: $50;
-    }
-    100% {
-      -webkit-transform: $100;
-    }
-  }
-  @keyframes $name {
-    0% {
-      transform: $0;
-    }
-    50% {
-      transform: $50;
-    }
-    100% {
-      transform: $100;
-    }
-  }
 }

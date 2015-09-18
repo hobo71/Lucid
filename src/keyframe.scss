@@ -42,38 +42,38 @@
  *
  *   @include ausl__keyframes-0-50-100-transform(spin, scale(1), scale(1.4), scale(1));
  */
-@mixin ausl__keyframes-0-50-100-transform($name, $0, $50, $100) {
-  @-moz-keyframes $name {
-    0% {
-      -moz-transform: $0;
-    }
-    50% {
-      -moz-transform: $50;
-    }
-    100% {
-      -moz-transform: $100;
-    }
-  }
-  @-webkit-keyframes $name {
-    0% {
-      -webkit-transform: $0;
-    }
-    50% {
-      -webkit-transform: $50;
-    }
-    100% {
-      -webkit-transform: $100;
-    }
-  }
-  @keyframes $name {
-    0% {
-      transform: $0;
-    }
-    50% {
-      transform: $50;
-    }
-    100% {
-      transform: $100;
-    }
-  }
-}
+// @mixin ausl__keyframes-three-stage-transform($name, $a0, $a50, $a1a00) {
+//   @-moz-keyframes #{$name} {
+//     0% {
+//       -moz-transform: #{$0};
+//     }
+//     50% {
+//       -moz-transform: #{$50};
+//     }
+//     100% {
+//       -moz-transform: #{$100};
+//     }
+//   }
+//   @-webkit-keyframes #{$name} {
+//     0% {
+//       -webkit-transform: $0;
+//     }
+//     50% {
+//       -webkit-transform: $50;
+//     }
+//     100% {
+//       -webkit-transform: $100;
+//     }
+//   }
+//   @keyframes #{$name} {
+//     0% {
+//       transform: $0;
+//     }
+//     50% {
+//       transform: $50;
+//     }
+//     100% {
+//       transform: $100;
+//     }
+//   }
+// }
