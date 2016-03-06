@@ -961,6 +961,55 @@
 */
 
 /*
+ * Text Classes
+ */
+/* Imports
+ * ========================================================================= */
+/* Variables
+ * ========================================================================= */
+/* Styles
+ * ========================================================================= */
+.text {
+  /*
+   * Text colours
+   */
+  /*
+   * Text positions
+   */ }
+  .text--primary {
+    color: #00bfd3 !important; }
+  .text--secondary {
+    color: #0091a0 !important; }
+  .text--light-primary {
+    color: white !important; }
+  .text--light-secondary {
+    color: #E7EBEE !important; }
+  .text--dark-primary {
+    color: #31323e !important; }
+  .text--dark-secondary {
+    color: #00394b !important; }
+  .text--dark-tertiary {
+    color: #215267 !important; }
+  .text--grey-one {
+    color: #9fa0b1 !important; }
+  .text--grey-two {
+    color: #e3eaf3 !important; }
+  .text--grey-three {
+    color: #f4f7fa !important; }
+  .text--success {
+    color: #5cd297; }
+  .text--warning {
+    color: #f6c169; }
+  .text--danger {
+    color: #f07086; }
+  .text--center {
+    text-align: center !important; }
+  .text--left {
+    text-align: left !important; }
+  .text--right {
+    text-align: right !important; }
+
+/*
  * A collection of mixins using the 'transform' properties
  */
 /**

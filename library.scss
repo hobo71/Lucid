@@ -1827,6 +1827,116 @@ $sizes--breakpoint-large: 1200px;
 }
 
 
+// text.scss
+
+/*
+ * Text Classes
+ */
+
+/* Imports
+ * ========================================================================= */
+
+@import 'src/colours';
+
+/* Styles
+ * ========================================================================= */
+
+// New version
+// --------------------
+
+/// Text classes
+/// @group text
+.text {
+  
+  /*
+   * Text colours
+   */
+  
+  /// @group text
+  &--primary {
+    color: $colour--brand-primary !important;
+  }
+  
+  /// @group text
+  &--secondary {
+    color: $colour--brand-secondary !important;
+  }
+  
+  /// @group text
+  &--light-primary {
+    color: $colour--light-primary !important;
+  }
+  
+  /// @group text
+  &--light-secondary {
+    color: $colour--light-secondary !important;
+  }
+  
+  /// @group text
+  &--dark-primary {
+    color: $colour--dark-primary !important;
+  }
+  
+  /// @group text
+  &--dark-secondary {
+    color: $colour--dark-secondary !important;
+  }
+  
+  /// @group text
+  &--dark-tertiary {
+    color: $colour--dark-tertiary !important;
+  }
+  
+  /// @group text
+  &--grey-one {
+    color: $colour--grey-one !important;
+  }
+  
+  /// @group text
+  &--grey-two {
+    color: $colour--grey-two !important;
+  }
+  
+  /// @group text
+  &--grey-three {
+    color: $colour--grey-three !important;
+  }
+  
+  /// @group text
+  &--success {
+    color: $colour--success;
+  }
+  
+  /// @group text
+  &--warning {
+    color: $colour--warning;
+  }
+  
+  /// @group text
+  &--danger {
+    color: $colour--danger;
+  }
+  
+  /*
+   * Text positions
+   */
+   
+  /// @group text
+   &--center {
+     text-align: center !important;
+   }
+   
+  /// @group text
+   &--left {
+     text-align: left !important;
+   }
+   
+  /// @group text
+   &--right {
+     text-align: right !important;
+   }
+}
+
 // transform.scss
 
 /*
