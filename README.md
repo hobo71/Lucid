@@ -9,8 +9,8 @@ You can install this package with `bower`
 `bower install a-useful-sass-library`
 
 ## Documentation
-The source code, contained in the [`src/`](https://github.com/AdamMurray/AUsefulSassLibrary/tree/master/src)
-directory, is heavily commented
+The source code is commented using `sassdoc` comments. You can view the documentation by cloning
+the repository and opening `sassdoc/index.html` in a browser.
 
 ## License
 The MIT License (MIT)
