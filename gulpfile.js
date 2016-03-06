@@ -11,11 +11,11 @@ var gulp    = require('gulp'),
 var src = 'src/';
 
 // Concatenate .scss files
-gulp.task('sass', function() {
-  gulp.src(src + '**/*.scss')
-      .pipe(concat('library.scss'))
-      .pipe(gulp.dest(''));
-});
+// gulp.task('sass', function() {
+//   gulp.src(src + '**/*.scss')
+//       .pipe(concat('library.scss'))
+//       .pipe(gulp.dest(''));
+// });
 
 // Compile and concatenate .scss files
 gulp.task('sass-to-css', function() {
@@ -35,9 +35,18 @@ gulp.task('sassdocs', function () {
 gulp.task('watch', function() {
 
   // Watch .scss files
-  gulp.watch(src + '*.scss', ['sass', 'sass-to-css', 'sassdocs']);
+  gulp.watch(src + '*.scss', [
+    // 'sass',
+    'sass-to-css',
+    'sassdocs'
+  ]);
 
 });
 
 // Default task
-gulp.task('default', ['sass', 'sass-to-css', 'sassdocs', 'watch']);
+gulp.task('default', [
+  // 'sass',
+  'sass-to-css',
+  'sassdocs',
+  'watch'
+]);
