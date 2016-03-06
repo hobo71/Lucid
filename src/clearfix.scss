@@ -1,14 +1,14 @@
 
-// _clearfix.scss
+// clearfix.scss
 
 /**
  * Clear fix mixin for use with floats
  *
  * Example usage:
  *
- *   @include ausl__clearfix;
+ *   @include clearfix;
  */
-@mixin ausl__clearfix {
+@mixin clearfix {
   zoom:1;
   &:before,
   &:after {

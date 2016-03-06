@@ -1,0 +1,61 @@
+
+// colours.scss
+
+/* Variables
+ * ========================================================================= */
+
+/// Primary brand colour
+/// @group colours
+$colour--brand-primary: #00bfd3;
+
+/// Secondary brand colour
+/// @group colours
+$colour--brand-secondary: darken($colour--brand-primary, 10%);
+
+/// Primary dark colour
+/// @group colours
+$colour--dark-primary: #31323e;
+
+/// Secondary brand colour
+/// @group colours
+$colour--dark-secondary: rgb(0, 57, 75);
+
+/// Secondary brand colour
+/// @group colours
+$colour--dark-tertiary: rgb(33, 82, 103);
+
+/// Grey colour one
+/// @group colours
+$colour--grey-one: rgb(159, 160, 177);
+
+/// Grey colour two
+/// @group colours
+$colour--grey-two: rgb(227, 234, 243);
+
+/// Grey colour three
+/// @group colours
+$colour--grey-three: rgb(244, 247, 250);
+
+/// Primary light colour
+/// @group colours
+$colour--light-primary: white;
+
+/// Secondary light colour
+/// @group colours
+$colour--light-secondary: #E7EBEE;
+
+/// Success colour
+/// @group colours
+$colour--success: rgb(92, 210, 151);
+
+/// Warning colour
+/// @group colours
+$colour--warning: rgb(246, 193, 105);
+
+/// Danger colour
+/// @group colours
+$colour--danger: rgb(240, 112, 134);
+
+/// Transparent colour
+/// @group colours
+$colour--transparent: transparent;

@@ -1,0 +1,424 @@
+
+// margins.scss
+
+/**
+ * Margin Classes
+ */
+
+/* Variables
+ * ========================================================================= */
+
+/// Default margin
+/// @group margins
+$margin--default: 15px;
+
+/// Small margin
+/// @group margins
+$margin--small: 10px;
+
+/// Extra small margin
+/// @group margins
+$margin--extra-small: 5px;
+
+/// XXS margin
+/// @group margins
+$margin--extra-extra-small: 2px 4px;
+
+/// Medium margin
+/// @group margins
+$margin--medium: 20px;
+
+/// Large margin
+/// @group margins
+$margin--large: 30px;
+
+/// Extra-large margin
+/// @group margins
+$margin--extra-large: 40px;
+
+/// No margin
+/// @group margins
+$margin--none: 0;
+
+/* Styles
+ * ========================================================================= */
+
+/*
+ * Margin all
+ */
+
+/// Margin auto
+/// @group margins
+.m-a {
+  margin: 0 auto;
+}
+
+/// XXS margin
+/// @group margins
+.m-xxs {
+  margin: 2px;
+}
+
+/// Extra-small margin
+/// @group margins
+.m-xs {
+  margin: $margin--extra-small;
+}
+
+/// Small margin
+/// @group margins
+.m-sm {
+  margin: $margin--small;
+}
+
+/// Default margin
+/// @group margins
+.m {
+  margin: $margin--default;
+}
+
+/// Medium margin
+/// @group margins
+.m-md {
+  margin: $margin--medium;
+}
+
+/// Large margin
+/// @group margins
+.m-lg {
+  margin: $margin--large;
+}
+
+/// Extra-large margin
+/// @group margins
+.m-xl {
+  margin: $margin--extra-large;
+}
+
+/// No margin
+/// @group margins
+.m-n {
+  margin: 0 !important;
+}
+
+/*
+ * Margin left
+ */
+ 
+/// @group margins
+.m-l-none {
+  margin-left: 0;
+}
+
+/// @group margins
+.m-l-xs {
+  margin-left: $margin--extra-small;
+}
+
+/// @group margins
+.m-l-sm {
+  margin-left: $margin--small;
+}
+
+/// @group margins
+.m-l {
+  margin-left: $margin--default;
+}
+
+/// @group margins
+.m-l-md {
+  margin-left: $margin--medium;
+}
+
+/// @group margins
+.m-l-lg {
+  margin-left: $margin--large;
+}
+
+/// @group margins
+.m-l-xl {
+  margin-left: $margin--extra-large;
+}
+
+/// @group margins
+.m-l-xxl {
+  margin-left: 50px;
+}
+
+/// @group margins
+.m-l-n-xxs {
+  margin-left: -1px;
+}
+
+/// @group margins
+.m-l-n-xs {
+  margin-left: -$margin--extra-small;
+}
+
+/// @group margins
+.m-l-n-sm {
+  margin-left: -$margin--small;
+}
+
+/// @group margins
+.m-l-n {
+  margin-left: -$margin--default;
+}
+
+/// @group margins
+.m-l-n-md {
+  margin-left: -$margin--medium;
+}
+
+/// @group margins
+.m-l-n-lg {
+  margin-left: -$margin--large;
+}
+
+/// @group margins
+.m-l-n-xl {
+  margin-left: -$margin--extra-large;
+}
+
+/*
+ * Margin top
+ */
+ 
+/// @group margins
+.m-t-none {
+  margin-top: 0;
+}
+
+/// @group margins
+.m-t-xxs {
+  margin-top: 1px;
+}
+
+/// @group margins
+.m-t-xs {
+  margin-top: $margin--extra-small;
+}
+
+/// @group margins
+.m-t-sm {
+  margin-top: $margin--small;
+}
+
+/// @group margins
+.m-t {
+  margin-top: $margin--default;
+}
+
+/// @group margins
+.m-t-md {
+  margin-top: $margin--medium;
+}
+
+/// @group margins
+.m-t-lg {
+  margin-top: $margin--large;
+}
+
+/// @group margins
+.m-t-xl {
+  margin-top: $margin--extra-large;
+}
+
+/// @group margins
+.m-t-xxl {
+  margin-top: 50px;
+}
+
+/// @group margins
+.m-t-n-xxs {
+  margin-top: -1px;
+}
+
+/// @group margins
+.m-t-n-xs {
+  margin-top: -$margin--extra-small;
+}
+
+/// @group margins
+.m-t-n-sm {
+  margin-top: -$margin--small;
+}
+
+/// @group margins
+.m-t-n {
+  margin-top: -$margin--default;
+}
+
+/// @group margins
+.m-t-n-md {
+  margin-top: -$margin--medium;
+}
+
+/// @group margins
+.m-t-n-lg {
+  margin-top: -$margin--large;
+}
+
+/// @group margins
+.m-t-n-xl {
+  margin-top: -$margin--extra-large;
+}
+
+/*
+ * Margin right
+ */
+ 
+/// @group margins
+.m-r-none {
+  margin-right: 0;
+}
+
+/// @group margins
+.m-r-xxs {
+  margin-right: 1px;
+}
+
+/// @group margins
+.m-r-xs {
+  margin-right: $margin--extra-small;
+}
+
+/// @group margins
+.m-r-sm {
+  margin-right: $margin--small;
+}
+
+/// @group margins
+.m-r {
+  margin-right: $margin--default;
+}
+
+/// @group margins
+.m-r-md {
+  margin-right: $margin--medium;
+}
+
+/// @group margins
+.m-r-lg {
+  margin-right: $margin--large;
+}
+
+/// @group margins
+.m-r-xl {
+  margin-right: $margin--extra-large;
+}
+
+/// @group margins
+.m-r-n-xxs {
+  margin-right: -1px;
+}
+
+/// @group margins
+.m-r-n-xs {
+  margin-right: -$margin--extra-small;
+}
+
+/// @group margins
+.m-r-n-sm {
+  margin-right: -$margin--small;
+}
+
+/// @group margins
+.m-r-n {
+  margin-right: -$margin--default;
+}
+
+/// @group margins
+.m-r-n-md {
+  margin-right: -$margin--medium;
+}
+
+/// @group margins
+.m-r-n-lg {
+  margin-right: -$margin--large;
+}
+
+/// @group margins
+.m-r-n-xl {
+  margin-right: -$margin--extra-large;
+}
+
+/*
+ * Margin bottom
+ */
+ 
+/// @group margins
+.m-b-none {
+  margin-bottom: 0;
+}
+
+/// @group margins
+.m-b-xxs {
+  margin-bottom: 1px;
+}
+
+/// @group margins
+.m-b-xs {
+  margin-bottom: $margin--extra-small;
+}
+
+/// @group margins
+.m-b-sm {
+  margin-bottom: $margin--small;
+}
+
+/// @group margins
+.m-b {
+  margin-bottom: $margin--default;
+}
+
+/// @group margins
+.m-b-md {
+  margin-bottom: $margin--medium;
+}
+
+/// @group margins
+.m-b-lg {
+  margin-bottom: $margin--large;
+}
+
+/// @group margins
+.m-b-xl {
+  margin-bottom: $margin--extra-large;
+}
+
+/// @group margins
+.m-b-n-xxs {
+  margin-bottom: -1px;
+}
+
+/// @group margins
+.m-b-n-xs {
+  margin-bottom: -$margin--extra-small;
+}
+
+/// @group margins
+.m-b-n-sm {
+  margin-bottom: -$margin--small;
+}
+
+/// @group margins
+.m-b-n {
+  margin-bottom: -$margin--default;
+}
+
+/// @group margins
+.m-b-n-md {
+  margin-bottom: -$margin--medium;
+}
+
+/// @group margins
+.m-b-n-lg {
+  margin-bottom: -$margin--large;
+}
+
+/// @group margins
+.m-b-n-xl {
+  margin-bottom: -$margin--extra-large;
+}
+

@@ -1,5 +1,5 @@
 
-// _transform.scss
+// transform.scss
 
 /*
  * A collection of mixins using the 'transform' properties
@@ -10,9 +10,9 @@
 *
 * Example usage:
 *
-*   @include ausl__rotate(90deg);
+*   @include rotate(90deg);
 */
-@mixin ausl__rotate($degrees) {
+@mixin rotate($degrees) {
   -ms-transform: rotate($degrees);
   -webkit-transform: rotate($degrees);
   transform: rotate($degrees);
@@ -23,9 +23,9 @@
  *
  * Example usage:
  *
- *   @include ausl__translateY(50%);
+ *   @include translateY(50%);
  */
-@mixin ausl__translateY($translation) {
+@mixin translateY($translation) {
   -moz-transform: translateY($translation);
   -ms-transform: translateY($translation);
   -o-transform: translateY($translation);

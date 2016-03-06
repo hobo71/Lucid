@@ -1,0 +1,107 @@
+
+// radius.scss
+
+/*
+ * Border-radius
+ */
+
+/* Variables
+ * ========================================================================= */
+
+/// Small radius
+/// @group border-radius
+$radius--small: 4px;
+
+/// Medium radius
+/// @group border-radius
+$radius--medium: 10px;
+
+/// Large radius
+/// @group border-radius
+$radius--large: 15px;
+
+/// Extra large radius
+/// @group border-radius
+$radius--extra-large: 100px;
+
+/* Mixins
+ * ========================================================================= */
+
+/// Border radius mixin
+/// @group border-radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/// Radius positions mixin
+/// Adds top, bottom, left, and right radii
+/// @group border-radius
+@mixin all-radius-positions($radius) {
+  &--left {
+    @include border-radius($radius 0 0 $radius);
+  }
+  
+  &--right {
+    @include border-radius(0 $radius $radius 0);
+  }
+  
+  &--top {
+    @include border-radius($radius $radius 0 0);
+  }
+  
+  &--bottom {
+    @include border-radius(0 0 $radius $radius);
+  }
+}
+
+/* Classes
+ * ========================================================================= */
+
+// New version
+// ---------------------
+
+/// Border-radius classes
+/// @group border-radius
+.radius {
+  @include border-radius($radius--small $radius--small $radius--small $radius--small);
+  
+  // Add top, bottom, left, right radii
+  @include all-radius-positions($radius--small);
+  
+  /// @group border-radius
+  &--medium {
+    @include border-radius($radius--medium $radius--medium $radius--medium $radius--medium);
+    
+    // Add top, bottom, left, right radii
+    @include all-radius-positions($radius--medium);
+  }
+  
+  /// @group border-radius
+  &--large {
+    @include border-radius($radius--large $radius--large $radius--large $radius--large);
+    
+    // Add top, bottom, left, right radii
+    @include all-radius-positions($radius--large);
+  }
+  
+  /// @group border-radius
+  &--extra-large {
+    @include border-radius($radius--extra-large $radius--extra-large $radius--extra-large $radius--extra-large);
+    
+    // Add top, bottom, left, right radii
+    @include all-radius-positions($radius--extra-large);
+  }
+  
+  /// @group border-radius
+  &--circle {
+    @include border-radius(100%);
+  }
+  
+  /// @group border-radius
+  &--none {
+    @include border-radius(0);
+  }
+}

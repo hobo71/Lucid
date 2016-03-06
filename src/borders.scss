@@ -1,0 +1,153 @@
+
+// borders.scss
+
+/**
+ * Border Classes
+ */
+
+/* Imports
+ * ========================================================================= */
+
+// Colours
+@import 'colours';
+
+/* Variables
+ * ========================================================================= */
+
+$border--default-thickness: 1px;
+
+/* Styles
+ * ========================================================================= */
+
+// New version
+// ---------------------
+
+/// Border classes
+/// @group borders
+.border {
+  border: $border--default-thickness solid;
+  
+  /*
+   * Positions
+   */
+  
+  /// @group borders
+  &--top {
+    border-top: $border--default-thickness solid;
+    border-bottom: 0 solid;
+    border-left: 0 solid;
+    border-right: 0 solid;
+  }
+  
+  /// @group borders
+  &--bottom {
+    border-top: 0 solid;
+    border-bottom: $border--default-thickness solid;
+    border-left: 0 solid;
+    border-right: 0 solid;
+  }
+  
+  /// @group borders
+  &--left {
+    border-top: 0 solid;
+    border-bottom: 0 solid;
+    border-left: $border--default-thickness solid;
+    border-right: 0 solid;
+  }
+  
+  /// @group borders
+  &--right {
+    border-top: 0 solid;
+    border-bottom: 0 solid;
+    border-left: 0 solid;
+    border-right: $border--default-thickness solid;
+  }
+  
+  /*
+   * Colours
+   */
+  
+  /// @group borders
+  &--light-primary {
+    border-color: $colour--light-primary!important;
+  }
+  
+  /// @group borders
+  &--light-secondary {
+    border-color: $colour--light-secondary!important;
+  }
+  
+  /// @group borders
+  &--dark-primary {
+    border-color: $colour--dark-primary!important;
+  }
+  
+  /// @group borders
+  &--dark-secondary {
+    border-color: $colour--dark-secondary!important;
+  }
+  
+  /// @group borders
+  &--dark-tertiary {
+    border-color: $colour--dark-tertiary!important;
+  }
+  
+  /// @group borders
+  &--grey-one {
+    border-color: $colour--grey-one !important;
+  }
+  
+  /// @group borders
+  &--grey-two {
+    border-color: $colour--grey-two !important;
+  }
+  
+  /// @group borders
+  &--grey-three {
+    border-color: $colour--grey-three!important;
+  }
+  
+  /// @group borders
+  &--success {
+    border-color: $colour--success;
+  }
+  
+  /// @group borders
+  &--warning {
+    border-color: $colour--warning;
+  }
+  
+  /// @group borders
+  &--danger {
+    border-color: $colour--danger;
+  }
+  
+  /*
+   * Thickness
+   */
+  
+  /// @group borders
+  &--none {
+    border: none !important;
+  }
+  
+  /// @group borders
+  &--x2 {
+    border-width: $border--default-thickness * 2;
+  }
+  
+  /// @group borders
+  &--x3 {
+    border-width: $border--default-thickness * 3;
+  }
+  
+  /// @group borders
+  &--x4 {
+    border-width: $border--default-thickness * 4;
+  }
+  
+  /// @group borders
+  &--x5 {
+    border-width: $border--default-thickness * 5;
+  }
+}

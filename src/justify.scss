@@ -1,0 +1,41 @@
+
+// justify.scss
+
+/*
+ * Justify Helper Classes
+ */
+
+/// Justify classes (using flexbox)
+/// @group justify
+.justify {
+  
+  /// @group justify
+  &--start {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /// @group justify
+  &--end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /// @group justify
+  &--center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /// @group justify
+  &--space-around {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /// @group justify
+  &--space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+}

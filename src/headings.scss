@@ -1,66 +1,107 @@
 
-// _headings.scss
+// headings.scss
 
-/*
- * A collection of headings mixins
+/**
+ * Headings styles
  */
 
-/**
-* Generic heading mixin
-*
-* Example usage:
-*
-*   @include ausl__heading(30px, #fff, #000, left, 20px 0);
-*/
-@mixin ausl__heading($fontSize, $color, $background, $textAlign, $padding) {
- font-size: $fontSize;
- padding: $padding;
- color: $color;
- background: $background;
- text-align: $textAlign;
-}
+/* Import
+ * ========================================================================= */
 
-/**
-* h1 mixin
-*
-* Example usage:
-*
-*   @include ausl__h1(30px, #fff, #000, left, 20px 0);
-*/
-@mixin ausl__h1($fontSize: 40px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
-  @include ausl__heading($fontSize, $color, $background, $textAlign, $padding);
-}
+// Colours
+@import 'colours';
 
-/**
-* h2 mixin
-*
-* Example usage:
-*
-*   @include ausl__h2(30px, #fff, #000, left, 20px 0);
-*/
-@mixin ausl__h2($fontSize: 30px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
-  @include ausl__heading($fontSize, $color, $background, $textAlign, $padding);
-}
+// Media Queries
+@import 'media-queries';
 
-/**
-* h3 mixin
-*
-* Example usage:
-*
-*   @include ausl__h3(30px, #fff, #000, left, 20px 0);
-*/
-@mixin ausl__h3($fontSize: 20px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
-  @include ausl__heading($fontSize, $color, $background, $textAlign, $padding);
-}
+// Sizes
+@import 'sizes';
 
+/* Variables
+ * ========================================================================= */
 
-/**
-* h4 mixin
-*
-* Example usage:
-*
-*   @include ausl__h4(30px, #fff, #000, left, 20px 0);
-*/
-@mixin ausl__h4($fontSize: 14px, $color: #222, $background: none, $textAlign: left, $padding: 20px 0) {
-  @include heading($fontSize, $color, $background, $textAlign, $padding);
+/// Small heading size
+/// @group headings
+$heading--extra-small: 15px;
+
+/// Small heading size
+/// @group headings
+$heading--small: 18px;
+
+/// Medium heading size
+/// @group headings
+$heading--medium: 24px;
+
+/// Large heading size
+/// @group headings
+$heading--large: 38px;
+
+/// Extra large heading size
+/// @group headings
+$heading--extra-large: 46px;
+
+/* Classes
+ * ========================================================================= */
+
+/// Heading classes
+/// @group headings
+.heading {
+  text-transform: uppercase;
+  color: $colour--dark-primary;
+  font-size: $heading--small;
+  font-weight: 400;
+  transition-duration: .4s;
+  
+  /// Extra small heading
+  /// @group headings
+  &--extra-small {
+    font-size: $heading--extra-small;
+    // font-weight: 100;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-transform: initial;
+    
+    @include below-breakpoint($sizes--breakpoint-large) {
+      font-size: 12px;
+    }
+  }
+  
+  /// Small heading
+  /// @group headings
+  &--small {
+    font-size: $heading--small;
+    
+    @include below-breakpoint($sizes--breakpoint-large) {
+      font-size: $heading--extra-small;
+    }
+  }
+  
+  /// Medium heading
+  /// @group headings
+  &--medium {
+    font-size: $heading--medium;
+    
+    @include below-breakpoint($sizes--breakpoint-large) {
+      font-size: $heading--small;
+    }
+  }
+  
+  /// Large heading
+  /// @group headings
+  &--large {
+    font-size: $heading--large;
+    
+    @include below-breakpoint($sizes--breakpoint-large) {
+      font-size: $heading--medium;
+    }
+  }
+  
+  /// Extra large heading
+  /// @group headings
+  &--extra-large {
+    font-size: $heading--extra-large;
+    
+    @include below-breakpoint($sizes--breakpoint-large) {
+      font-size: $heading--large;
+    }
+  }
 }

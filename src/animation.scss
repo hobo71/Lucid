@@ -1,5 +1,5 @@
 
-// _animation.scss
+// animation.scss
 
 /*
  * A collection of mixins using the 'animation' properties
@@ -10,9 +10,9 @@
  *
  * Example usage:
  *
- *   @include ausl__animation-duration(1s);
+ *   @include animation-duration(1s);
  */
-@mixin ausl__animation-duration($time) {
+@mixin animation-duration($time) {
   -moz-animation-duration: $time;
   -ms-animation-duration: $time;
   -webkit-animation-duration: $time;
@@ -24,9 +24,9 @@
  *
  * Example usage:
  *
- *   @include ausl__animation-iteration-count(infinite);
+ *   @include animation-iteration-count(infinite);
  */
-@mixin ausl__animation-iteration-count($type) {
+@mixin animation-iteration-count($type) {
   -moz-animation-iteration-count: $type;
   -ms-animation-iteration-count: $type;
   -webkit-animation-iteration-count: $type;
@@ -38,9 +38,9 @@
  *
  * Example usage:
  *
- *   @include ausl__animation-name(spin);
+ *   @include animation-name(spin);
  */
-@mixin ausl__animation-name($name) {
+@mixin animation-name($name) {
   -moz-animation-name: $name;
   -ms-animation-name: $name;
   -webkit-animation-name: $name;
@@ -52,9 +52,9 @@
  *
  * Example usage:
  *
- *   @include ausl__animation-timing-function(linear);
+ *   @include animation-timing-function(linear);
  */
-@mixin ausl__animation-timing-function($type) {
+@mixin animation-timing-function($type) {
   -moz-animation-timing-function: $type;
   -ms-animation-timing-function: $type;
   -webkit-animation-timing-function: $type;

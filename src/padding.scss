@@ -1,0 +1,418 @@
+
+// padding.scss
+
+/**
+ * Padding Classes
+ */
+
+/* Variables
+ * ========================================================================= */
+
+/// Default padding
+/// @group padding
+$padding--default: 15px;
+
+/// Small padding
+/// @group padding
+$padding--small: 10px;
+
+/// Extra-small padding
+/// @group padding
+$padding--extra-small: 5px;
+
+/// XXS padding
+/// @group padding
+$padding--extra-extra-small: 2px 4px;
+
+/// Medium padding
+/// @group padding
+$padding--medium: 20px;
+
+/// Large padding
+/// @group padding
+$padding--large: 30px;
+
+/// Extra-large padding
+/// @group padding
+$padding--extra-large: 40px;
+
+/// No padding
+/// @group padding
+$padding--none: 0;
+
+/* Styles
+ * ========================================================================= */
+
+// New version
+// --------------------------
+
+/// @group padding
+.padding {
+  
+  /// @group padding
+  &--none {
+    padding: 0;
+  }
+}
+
+// --------------------------
+
+/*
+ * Padding all
+ */
+ 
+/// @group padding
+.p-xxs {
+  padding: $padding--extra-extra-small;
+}
+
+/// @group padding
+.p-xs {
+  padding: $padding--extra-small;
+}
+
+/// @group padding
+.p-sm {
+  padding: $padding--small;
+}
+
+/// @group padding
+.p {
+  padding: $padding--default;
+}
+
+/// @group padding
+.p-md {
+  padding: $padding--medium;
+}
+
+/// @group padding
+.p-lg {
+  padding: $padding--large;
+}
+
+/// @group padding
+.p-xl {
+  padding: $padding--extra-large;
+}
+
+/// @group padding
+.p-n {
+  padding: $padding--none !important;
+}
+
+/*
+ * Padding left
+ */
+ 
+/// @group padding
+.p-l-none {
+  padding-left: $padding--none;
+}
+
+/// @group padding
+.p-l-xs {
+  padding-left: $padding--extra-small;
+}
+
+/// @group padding
+.p-l-sm {
+  padding-left: $padding--small;
+}
+
+/// @group padding
+.p-l {
+  padding-left: $padding--default;
+}
+
+/// @group padding
+.p-l-md {
+  padding-left: $padding--medium;
+}
+
+/// @group padding
+.p-l-lg {
+  padding-left: $padding--large;
+}
+
+/// @group padding
+.p-l-xl {
+  padding-left: $padding--extra-large;
+}
+
+/// @group padding
+.p-l-n-xxs {
+  padding-left: -1px;
+}
+
+/// @group padding
+.p-l-n-xs {
+  padding-left: -$padding--extra-small;
+}
+
+/// @group padding
+.p-l-n-sm {
+  padding-left: -$padding--small;
+}
+
+/// @group padding
+.p-l-n {
+  padding-left: -$padding--default;
+}
+
+/// @group padding
+.p-l-n-md {
+  padding-left: -$padding--medium;
+}
+
+/// @group padding
+.p-l-n-lg {
+  padding-left: -$padding--large;
+}
+
+/// @group padding
+.p-l-n-xl {
+  padding-left: -$padding--extra-large;
+}
+
+/*
+ * Padding top
+ */
+
+/// @group padding
+.p-t-none {
+  padding-top: $padding--none;
+}
+
+/// @group padding
+.p-t-xxs {
+  padding-top: 1px;
+}
+
+/// @group padding
+.p-t-xs {
+  padding-top: $padding--extra-small;
+}
+
+/// @group padding
+.p-t-sm {
+  padding-top: $padding--small;
+}
+
+/// @group padding
+.p-t {
+  padding-top: $padding--default;
+}
+
+/// @group padding
+.p-t-md {
+  padding-top: $padding--medium;
+}
+
+/// @group padding
+.p-t-lg {
+  padding-top: $padding--large;
+}
+
+/// @group padding
+.p-t-xl {
+  padding-top: $padding--extra-large;
+}
+
+/// @group padding
+.p-t-huge {
+  padding-top: 270px;
+}
+
+/// @group padding
+.p-t-n-xxs {
+  padding-top: -1px;
+}
+
+/// @group padding
+.p-t-n-xs {
+  padding-top: -$padding--extra-small;
+}
+
+/// @group padding
+.p-t-n-sm {
+  padding-top: -$padding--small;
+}
+
+/// @group padding
+.p-t-n {
+  padding-top: -$padding--default;
+}
+
+/// @group padding
+.p-t-n-md {
+  padding-top: -$padding--medium;
+}
+
+/// @group padding
+.p-t-n-lg {
+  padding-top: -$padding--large;
+}
+
+/// @group padding
+.p-t-n-xl {
+  padding-top: -$padding--extra-large;
+}
+
+/*
+ * Padding right
+ */
+
+/// @group padding
+.p-r-none {
+  padding-right: $padding--none;
+}
+
+/// @group padding
+.p-r-xxs {
+  padding-right: 1px;
+}
+
+/// @group padding
+.p-r-xs {
+  padding-right: $padding--extra-small;
+}
+
+/// @group padding
+.p-r-sm {
+  padding-right: $padding--small;
+}
+
+/// @group padding
+.p-r {
+  padding-right: $padding--default;
+}
+
+/// @group padding
+.p-r-md {
+  padding-right: $padding--medium;
+}
+
+/// @group padding
+.p-r-lg {
+  padding-right: $padding--large;
+}
+
+/// @group padding
+.p-r-xl {
+  padding-right: $padding--extra-large;
+}
+
+/// @group padding
+.p-r-n-xxs {
+  padding-right: -1px;
+}
+
+/// @group padding
+.p-r-n-xs {
+  padding-right: -$padding--extra-small;
+}
+
+/// @group padding
+.p-r-n-sm {
+  padding-right: -$padding--small;
+}
+
+/// @group padding
+.p-r-n {
+  padding-right: -$padding--default;
+}
+
+/// @group padding
+.p-r-n-md {
+  padding-right: -$padding--medium;
+}
+
+/// @group padding
+.p-r-n-lg {
+  padding-right: -$padding--large;
+}
+
+/// @group padding
+.p-r-n-xl {
+  padding-right: -$padding--extra-large;
+}
+
+/*
+ * Padding bottom
+ */
+
+/// @group padding
+.p-b-none {
+  padding-bottom: $padding--none;
+}
+
+/// @group padding
+.p-b-xxs {
+  padding-bottom: 1px;
+}
+
+/// @group padding
+.p-b-xs {
+  padding-bottom: $padding--extra-small;
+}
+
+/// @group padding
+.p-b-sm {
+  padding-bottom: $padding--small;
+}
+
+/// @group padding
+.p-b {
+  padding-bottom: $padding--default;
+}
+
+/// @group padding
+.p-b-md {
+  padding-bottom: $padding--medium;
+}
+
+/// @group padding
+.p-b-lg {
+  padding-bottom: $padding--large;
+}
+
+/// @group padding
+.p-b-xl {
+  padding-bottom: $padding--extra-large;
+}
+
+/// @group padding
+.p-b-n-xxs {
+  padding-bottom: -1px;
+}
+
+/// @group padding
+.p-b-n-xs {
+  padding-bottom: -$padding--extra-small;
+}
+
+/// @group padding
+.p-b-n-sm {
+  padding-bottom: -$padding--small;
+}
+
+/// @group padding
+.p-b-n {
+  padding-bottom: -$padding--default;
+}
+
+/// @group padding
+.p-b-n-md {
+  padding-bottom: -$padding--medium;
+}
+
+/// @group padding
+.p-b-n-lg {
+  padding-bottom: -$padding--large;
+}
+
+/// @group padding
+.p-b-n-xl {
+  padding-bottom: -$padding--extra-large;
+}

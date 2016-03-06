@@ -1,5 +1,5 @@
 
-// _text-areas.scss
+// text-areas.scss
 
 /*
 * A collection of text area mixins
@@ -10,9 +10,9 @@
 *
 * Example usage:
 *
-*   @include ausl__padded-text-area(...);
+*   @include padded-text-area(...);
 */
-@mixin ausl__padded-text-area($fontFamily, $fontSize, $lineHeight, $padding,
+@mixin padded-text-area($fontFamily, $fontSize, $lineHeight, $padding,
                   $wordSpacing, $borderBottom, $borderTop, $color,
                   $backgroundColor, $textAlign) {
   font-family: $fontFamily;

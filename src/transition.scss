@@ -1,5 +1,5 @@
 
-// _transition.scss
+// transition.scss
 
 /*
  * A collection of mixins using the 'transition' properties
@@ -10,9 +10,9 @@
  *
  * Example usage:
  *
- *   @include ausl__transition(top, 1s, ease);
+ *   @include transition(top, 1s, ease);
  */
-@mixin ausl__transition($type, $time, $curve) {
+@mixin transition($type, $time, $curve) {
   -o-transition: $type $time $curve;
   -moz-transition: $type $time $curve;
   -webkit-transition: $type $time $curve;
@@ -24,9 +24,9 @@
  *
  * Example usage:
  *
- *   @include ausl__transition-delay(1s);
+ *   @include transition-delay(1s);
  */
-@mixin ausl__transition-delay($time) {
+@mixin transition-delay($time) {
   -webkit-transition-delay: $time;
   transition-delay: $time;
 }
@@ -36,9 +36,9 @@
  *
  * Example usage:
  *
- *   @include ausl__transition-duration(.4s);
+ *   @include transition-duration(.4s);
  */
-@mixin ausl__transition-duration($time) {
+@mixin transition-duration($time) {
   -moz-transition-duration: $time;
   -o-transition-duration: $time;
   -webkit-transition-duration: $time;
@@ -50,9 +50,9 @@
  *
  * Example usage:
  *
- *   @include ausl__transition-properties(1s top ease .4s, .4s color linear 0s);
+ *   @include transition-properties(1s top ease .4s, .4s color linear 0s);
  */
-@mixin ausl__transition-properties($arguments...) {
+@mixin transition-properties($arguments...) {
   -webkit-transition: $arguments;
   -moz-transition: $arguments;
   -o-transition: $arguments;

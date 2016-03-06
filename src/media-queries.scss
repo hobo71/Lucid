@@ -1,16 +1,16 @@
 
-// _media-queries.scss
+// media-queries.scss
 
 /**
  * Apply styles to an element above a certain screen size
  *
  * Example usage:
  *
- *   @include ausl__above-breakpoint(900px) {
+ *   @include above-breakpoint(900px) {
  *     background-color: #ff0000;
  *   }
  */
-@mixin ausl__above-breakpoint($size) {
+@mixin above-breakpoint($size) {
   @media screen and (min-width: $size) { @content; }
 }
 
@@ -19,10 +19,10 @@
  *
  * Example usage:
  *
- *   @include ausl__below-breakpoint(900px) {
+ *   @include below-breakpoint(900px) {
  *     background-color: #00ff00;
  *   }
  */
-@mixin ausl__below-breakpoint($size) {
+@mixin below-breakpoint($size) {
   @media screen and (max-width: $size) { @content; }
 }
