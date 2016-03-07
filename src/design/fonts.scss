@@ -1,0 +1,74 @@
+
+// fonts.scss
+
+/*
+ * Font Styles
+ */
+
+/// Font classes
+/// @group fonts
+.font {
+  
+  /*
+   * Font families
+   */
+  
+  /// @group fonts
+  &--serif {
+    font-family: $font--family-serif;
+  }
+  
+  /// @group fonts
+  &--sans-serif {
+    font-family: $font--family-sans-serif;
+  }
+  
+  /*
+   * Font sizes
+   */
+  
+  /// @group fonts
+  &--small {
+    font-size: $font--size-small;
+  }
+  
+  /// @group fonts
+  &--medium {
+    font-size: $font--size-medium;
+  }
+  
+  /// @group fonts
+  &--large {
+    font-size: $font--size-large;
+  }
+  
+  /// @group fonts
+  &--extra-large {
+    font-size: $font--size-extra-large;
+  }
+  
+  /*
+   * Font weights
+   */
+   
+  /// @group fonts
+  &--light {
+    font-weight: $font--weight-light;
+  }
+  
+  /// @group fonts
+  &--normal {
+    font-weight: $font--weight-normal;
+  }
+  
+  /// @group fonts
+  &--medium {
+    font-weight: $font--weight-medium;
+  }
+  
+  /// @group fonts
+  &--bold {
+    font-weight: $font--weight-bold;
+  }
+}
+

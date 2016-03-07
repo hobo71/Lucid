@@ -1,0 +1,38 @@
+
+// marginSettings.scss
+
+/*
+ * Settings for margin classes
+ */
+
+/// Default margin
+/// @group margins
+$margin--default: 15px;
+
+/// Small margin
+/// @group margins
+$margin--small: 10px;
+
+/// Extra small margin
+/// @group margins
+$margin--extra-small: 5px;
+
+/// XXS margin
+/// @group margins
+$margin--extra-extra-small: 2px 4px;
+
+/// Medium margin
+/// @group margins
+$margin--medium: 20px;
+
+/// Large margin
+/// @group margins
+$margin--large: 30px;
+
+/// Extra-large margin
+/// @group margins
+$margin--extra-large: 40px;
+
+/// No margin
+/// @group margins
+$margin--none: 0;

@@ -1,0 +1,42 @@
+
+// fontSettings.scss
+
+/*
+ * Settings for font classes
+ */
+
+/// Sans serif font family
+/// @group fonts
+$font--family-sans-serif: 'Open Sans', sans-serif;
+
+/// Serif font family
+/// @group fonts
+$font--family-serif: 'Times New Roman', serif;
+
+/// @group fonts
+$font--size-small: 12px;
+
+/// @group fonts
+$font--size-medium: 14px;
+
+/// @group fonts
+$font--size-large: 16px;
+
+/// @group fonts
+$font--size-extra-large: 18px;
+
+/// Font weight light
+/// @group fonts
+$font--weight-light: 300;
+
+/// Font weight normal
+/// @group fonts
+$font--weight-normal: 300;
+
+/// Font weight normal
+/// @group fonts
+$font--weight-medium: 400;
+
+/// Font weight bold
+/// @group fonts
+$font--weight-bold: 600;

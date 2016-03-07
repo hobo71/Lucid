@@ -10,21 +10,6 @@ var gulp    = require('gulp'),
 // Folders
 var src = 'src/';
 
-// Concatenate .scss files
-// gulp.task('sass', function() {
-//   gulp.src(src + '**/*.scss')
-//       .pipe(concat('library.scss'))
-//       .pipe(gulp.dest(''));
-// });
-
-// Compile and concatenate .scss files
-gulp.task('sass-to-css', function() {
-  gulp.src(src + '**/*.scss')
-      .pipe(sass())
-      .pipe(concat('library.css'))
-      .pipe(gulp.dest(''));
-});
-
 // Sassdoc
 gulp.task('sassdocs', function () {
   return gulp.src(src + '**/*.scss')
@@ -36,8 +21,6 @@ gulp.task('watch', function() {
 
   // Watch .scss files
   gulp.watch(src + '*.scss', [
-    // 'sass',
-    'sass-to-css',
     'sassdocs'
   ]);
 
@@ -45,8 +28,6 @@ gulp.task('watch', function() {
 
 // Default task
 gulp.task('default', [
-  // 'sass',
-  'sass-to-css',
   'sassdocs',
   'watch'
 ]);

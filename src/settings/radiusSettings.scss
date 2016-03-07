@@ -1,0 +1,22 @@
+
+// radiusSettings.scss
+
+/*
+ * Settings for border radius classes
+ */
+
+/// Small radius
+/// @group border-radius
+$radius--small: 4px;
+
+/// Medium radius
+/// @group border-radius
+$radius--medium: 10px;
+
+/// Large radius
+/// @group border-radius
+$radius--large: 15px;
+
+/// Extra large radius
+/// @group border-radius
+$radius--extra-large: 100px;

@@ -5,60 +5,18 @@
  * Headings styles
  */
 
-/* Import
- * ========================================================================= */
-
-// Colours
-@import 'src/colours';
-
-// Media Queries
-@import 'src/media-queries';
-
-// Sizes
-@import 'src/sizes';
-
-/* Variables
- * ========================================================================= */
-
-/// Small heading size
-/// @group headings
-$heading--extra-small: 15px;
-
-/// Small heading size
-/// @group headings
-$heading--small: 18px;
-
-/// Medium heading size
-/// @group headings
-$heading--medium: 24px;
-
-/// Large heading size
-/// @group headings
-$heading--large: 38px;
-
-/// Extra large heading size
-/// @group headings
-$heading--extra-large: 46px;
-
-/* Classes
- * ========================================================================= */
-
 /// Heading classes
 /// @group headings
 .heading {
   text-transform: uppercase;
   color: $colour--dark-primary;
   font-size: $heading--small;
-  font-weight: 400;
-  transition-duration: .4s;
+  font-weight: $font--weight-medium;
   
   /// Extra small heading
   /// @group headings
   &--extra-small {
     font-size: $heading--extra-small;
-    // font-weight: 100;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    text-transform: initial;
     
     @include below-breakpoint($sizes--breakpoint-large) {
       font-size: 12px;

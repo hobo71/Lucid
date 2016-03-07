@@ -1,0 +1,41 @@
+
+// depth.scss
+
+/*
+ * Depth / Layering Styles
+ */
+
+/// Depth classes
+/// @group depth
+.depth {
+  
+  /// @group depth
+  &--level-1 {
+    z-index: $depth--level-1;
+  }
+  
+  /// @group depth
+  &--level-2 {
+    z-index: $depth--level-2;
+  }
+  
+  /// @group depth
+  &--level-3 {
+    z-index: $depth--level-3;
+  }
+  
+  /// @group depth
+  &--level-4 {
+    z-index: $depth--level-4;
+  }
+  
+  /// @group depth
+  &--level-5 {
+    z-index: $depth--level-5;
+  }
+  
+  /// @group depth
+  &--top {
+    z-index: $depth--level-top;
+  }
+}

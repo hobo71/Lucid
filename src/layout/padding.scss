@@ -5,58 +5,6 @@
  * Padding Classes
  */
 
-/* Variables
- * ========================================================================= */
-
-/// Default padding
-/// @group padding
-$padding--default: 15px;
-
-/// Small padding
-/// @group padding
-$padding--small: 10px;
-
-/// Extra-small padding
-/// @group padding
-$padding--extra-small: 5px;
-
-/// XXS padding
-/// @group padding
-$padding--extra-extra-small: 2px 4px;
-
-/// Medium padding
-/// @group padding
-$padding--medium: 20px;
-
-/// Large padding
-/// @group padding
-$padding--large: 30px;
-
-/// Extra-large padding
-/// @group padding
-$padding--extra-large: 40px;
-
-/// No padding
-/// @group padding
-$padding--none: 0;
-
-/* Styles
- * ========================================================================= */
-
-// New version
-// --------------------------
-
-/// @group padding
-.padding {
-  
-  /// @group padding
-  &--none {
-    padding: 0;
-  }
-}
-
-// --------------------------
-
 /*
  * Padding all
  */

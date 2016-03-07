@@ -5,28 +5,6 @@
  * Border-radius
  */
 
-/* Variables
- * ========================================================================= */
-
-/// Small radius
-/// @group border-radius
-$radius--small: 4px;
-
-/// Medium radius
-/// @group border-radius
-$radius--medium: 10px;
-
-/// Large radius
-/// @group border-radius
-$radius--large: 15px;
-
-/// Extra large radius
-/// @group border-radius
-$radius--extra-large: 100px;
-
-/* Mixins
- * ========================================================================= */
-
 /// Border radius mixin
 /// @group border-radius
 @mixin border-radius($radius) {
@@ -56,12 +34,6 @@ $radius--extra-large: 100px;
     @include border-radius(0 0 $radius $radius);
   }
 }
-
-/* Classes
- * ========================================================================= */
-
-// New version
-// ---------------------
 
 /// Border-radius classes
 /// @group border-radius

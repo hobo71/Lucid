@@ -1,24 +1,38 @@
 
 // library.scss
 
-@import './src/align';
-@import './src/animation';
-@import './src/background';
-@import './src/borders';
-@import './src/box-shadow';
-@import './src/clearfix';
-@import './src/colours';
-@import './src/depth';
-@import './src/fonts';
-@import './src/headings';
-@import './src/justify';
-@import './src/margin';
-@import './src/media-queries';
-@import './src/padding';
-@import './src/radius';
-@import './src/retina';
-@import './src/sizes';
-@import './src/text';
-@import './src/text-areas';
-@import './src/transform';
-@import './src/transition';
+// Settings
+@import './src/settings/colours';
+@import './src/settings/depthSettings';
+@import './src/settings/fontSettings';
+@import './src/settings/headingSettings';
+@import './src/settings/marginSettings';
+@import './src/settings/paddingSettings';
+@import './src/settings/radiusSettings';
+@import './src/settings/sizes';
+
+// Mixins
+@import './src/mixins/animation';
+@import './src/mixins/boxSizing';
+@import './src/mixins/clearfix';
+@import './src/mixins/mediaQueries';
+@import './src/mixins/retina';
+@import './src/mixins/textAreas';
+@import './src/mixins/transform';
+@import './src/mixins/transition';
+
+// Layout
+@import './src/layout/align';
+@import './src/layout/depth';
+@import './src/layout/justify';
+@import './src/layout/margin';
+@import './src/layout/padding';
+
+// Design
+@import './src/design/background';
+@import './src/design/borders';
+@import './src/design/boxShadow';
+@import './src/design/fonts';
+@import './src/design/headings';
+@import './src/design/radius';
+@import './src/design/text';

@@ -1,0 +1,41 @@
+
+// align.scss
+
+/*
+ * Alignment Classes
+ */
+
+/// Align classes (using flexbox)
+/// @group align
+.align {
+  
+  /// @group align
+  &--center {
+    display: flex;
+    align-items: center;
+  }
+  
+  /// @group align
+  &--start {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  /// @group align
+  &--end {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  /// @group align
+  &--baseline {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  /// @group align
+  &--stretch {
+    display: flex;
+    align-items: stretch;
+  }
+}

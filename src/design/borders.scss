@@ -5,22 +5,7 @@
  * Border Classes
  */
 
-/* Imports
- * ========================================================================= */
-
-// Colours
-@import 'src/colours';
-
-/* Variables
- * ========================================================================= */
-
 $border--default-thickness: 1px;
-
-/* Styles
- * ========================================================================= */
-
-// New version
-// ---------------------
 
 /// Border classes
 /// @group borders
@@ -68,28 +53,38 @@ $border--default-thickness: 1px;
    */
   
   /// @group borders
+  &--brand-primary {
+    border-color: $colour--brand-primary !important;
+  }
+  
+  /// @group borders
+  &--brand-secondary {
+    border-color: $colour--brand-primary !important;
+  }
+  
+  /// @group borders
   &--light-primary {
-    border-color: $colour--light-primary!important;
+    border-color: $colour--light-primary !important;
   }
   
   /// @group borders
   &--light-secondary {
-    border-color: $colour--light-secondary!important;
+    border-color: $colour--light-secondary !important;
   }
   
   /// @group borders
   &--dark-primary {
-    border-color: $colour--dark-primary!important;
+    border-color: $colour--dark-primary !important;
   }
   
   /// @group borders
   &--dark-secondary {
-    border-color: $colour--dark-secondary!important;
+    border-color: $colour--dark-secondary !important;
   }
   
   /// @group borders
   &--dark-tertiary {
-    border-color: $colour--dark-tertiary!important;
+    border-color: $colour--dark-tertiary !important;
   }
   
   /// @group borders
@@ -104,7 +99,7 @@ $border--default-thickness: 1px;
   
   /// @group borders
   &--grey-three {
-    border-color: $colour--grey-three!important;
+    border-color: $colour--grey-three !important;
   }
   
   /// @group borders
