@@ -42,6 +42,57 @@ classes are defined in the `src/settings` folder of `a-useful-sass-library`.
 If you wish to override these, simply copy and paste the library into your project and update
 whichever settings you require.
 
+## Examples
+
+### Applying styles below a breakpoint
+```scss
+h2 {
+  font-size: 36px;
+  
+  @include below-breakpoint($sizes--breakpoint-small) {
+    font-size: 30px;
+  }
+}
+```
+
+### Applying styles above a breakpoint
+```scss
+h2 {
+  font-size: 36px;
+  
+  @include above-breakpoint($sizes--breakpoint-small) {
+    font-size: 40px;
+  }
+}
+```
+
+### Setting a retina image
+```scss
+.logo {
+  background-image: url(/path/to/normal/image);
+  
+  @include on-retina-screens($sizes--breakpoint-small) {
+    background-image: url(/path/to/retina/image);
+  }
+}
+```
+
+### Adding extra-large padding to a container
+```html
+<div class="container p-xl">
+  Some content
+</div>
+```
+
+### Adding large margin to a container
+```html
+<div class="container m-lg">
+  Some content
+</div>
+```
+
+-------
+
 ## License
 The MIT License (MIT)
 
