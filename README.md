@@ -1,16 +1,46 @@
 # A Useful Sass Library
 
-A library of mixins and classes for use in projects using SASS
+A Useful Sass Library is a library of classes and mixins for use in web applications
+using SASS.
+
+The library includes a number of useful mixins for such things as easily applying retina images
+to elements, applying certain styles above or below a certain breakpoint, and for
+adding a default box-shadow using a specified 'level'.
+
+Also included are classes which can be used to quickly style and layout your HTML.
+These include:
+
+* Helper classes for applying padding of various sizes to an element
+* Helper classes for applying margins of various sizes to an element
+* Helper classes for applying depth (z-index) to elements
+* Helper classes for aligning and justifying elements using the `flexbox` layout
 
 ## Installation
-You can install this package with `bower`
+You can install this package with `bower`, via:
 
-### bower
-`bower install a-useful-sass-library`
+```bash
+$ bower install a-useful-sass-library
+```
 
 ## Documentation
 The source code is commented using `sassdoc` comments. You can view the documentation by cloning
 the repository and opening `sassdoc/index.html` in a browser.
+
+## Usage
+In order to use the library, download the package from bower, then either copy and
+paste the source code into your styles folder, or import the library into a relevant file,
+e.g.
+
+```scss
+@import 'path/to/package/library.scss';
+```
+
+### Overriding Default Settings
+The colours, breakpoint sizes, margin settings, padding settings, etc, used in the helper
+classes are defined in the `src/settings` folder of `a-useful-sass-library`.
+
+If you wish to override these, simply copy and paste the library into your project and update
+whichever settings you require.
 
 ## License
 The MIT License (MIT)
