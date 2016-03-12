@@ -5,77 +5,8 @@
  * Background Classes
  */
 
-/// Background styles
-/// @group backgrounds
-.bg {
-  
-  /// @group backgrounds
-  &--primary {
-    background-color: $colour--brand-primary;
-  }
-  
-  /// @group backgrounds
-  &--secondary {
-    background-color: $colour--brand-secondary;
-  }
-  
-  /// @group backgrounds
-  &--light-primary {
-    background-color: $colour--light-primary;
-  }
-  
-  /// @group backgrounds
-  &--light-secondary {
-    background-color: $colour--light-secondary;
-  }
-  
-  /// @group backgrounds
-  &--dark-primary {
-    background-color: $colour--dark-primary;
-  }
-  
-  /// @group backgrounds
-  &--dark-secondary {
-    background-color: $colour--dark-secondary;
-  }
-  
-  /// @group backgrounds
-  &--dark-tertiary {
-    background-color: $colour--dark-tertiary;
-  }
-  
-  /// @group backgrounds
-  &--grey-one {
-    background-color: $colour--grey-one;
-  }
-  
-  /// @group backgrounds
-  &--grey-two {
-    background-color: $colour--grey-two;
-  }
-  
-  /// @group backgrounds
-  &--grey-three {
-    background-color: $colour--grey-three;
-  }
-  
-  /// @group backgrounds
-  &--success {
-    background-color: $colour--success;
-  }
-  
-  /// @group backgrounds
-  &--warning {
-    background-color: $colour--warning;
-  }
-  
-  /// @group backgrounds
-  &--danger {
-    background-color: $colour--danger;
-  }
-  
-  /// @group backgrounds
-  &--transparent {
-    background-color: transparent;
+@each $label, $map in $colours-map {
+  .bg--#{$label} {
+    background-color: map-get($map, colour) !important;
   }
 }

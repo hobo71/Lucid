@@ -1,58 +1,72 @@
 
 // colours.scss
 
-/// Primary brand colour
-/// @group colours
-$colour--brand-primary: #00bfd3;
+// Colours
+$colours--brand-one: #00bfd3;
+$colours--brand-two: #00bfd3;
+$colours--brand-three: #00bfd3;
+$colours--dark-one: #31323e;
+$colours--dark-two: rgb(0, 57, 75);
+$colours--dark-three: rgb(33, 82, 103);
+$colours--light-one: white;
+$colours--light-two: #E7EBEE;
+$colours--grey-one: rgb(159, 160, 177);
+$colours--grey-two: rgb(227, 234, 243);
+$colours--grey-three: rgb(244, 247, 250);
+$colours--success: rgb(92, 210, 151);
+$colours--info: #00bfd3;
+$colours--warning: rgb(246, 193, 105);
+$colours--danger: rgb(240, 112, 134);
+$colours--transparent: transparent;
 
-/// Secondary brand colour
-/// @group colours
-$colour--brand-secondary: darken($colour--brand-primary, 10%);
-
-/// Primary dark colour
-/// @group colours
-$colour--dark-primary: #31323e;
-
-/// Secondary brand colour
-/// @group colours
-$colour--dark-secondary: rgb(0, 57, 75);
-
-/// Secondary brand colour
-/// @group colours
-$colour--dark-tertiary: rgb(33, 82, 103);
-
-/// Grey colour one
-/// @group colours
-$colour--grey-one: rgb(159, 160, 177);
-
-/// Grey colour two
-/// @group colours
-$colour--grey-two: rgb(227, 234, 243);
-
-/// Grey colour three
-/// @group colours
-$colour--grey-three: rgb(244, 247, 250);
-
-/// Primary light colour
-/// @group colours
-$colour--light-primary: white;
-
-/// Secondary light colour
-/// @group colours
-$colour--light-secondary: #E7EBEE;
-
-/// Success colour
-/// @group colours
-$colour--success: rgb(92, 210, 151);
-
-/// Warning colour
-/// @group colours
-$colour--warning: rgb(246, 193, 105);
-
-/// Danger colour
-/// @group colours
-$colour--danger: rgb(240, 112, 134);
-
-/// Transparent colour
-/// @group colours
-$colour--transparent: transparent;
+// Colours map
+$colours-map: (
+  brand-one: (
+    colour: $colours--brand-one
+  ),
+  brand-two: (
+    colour: $colours--brand-two
+  ),
+  brand-three: (
+    colour: $colours--brand-three
+  ),
+  dark-one: (
+    colour: $colours--dark-one
+  ),
+  dark-two: (
+    colour: $colours--dark-two
+  ),
+  dark-three: (
+    colour: $colours--dark-three
+  ),
+  light-one: (
+    colour: $colours--light-one
+  ),
+  light-two: (
+    colour: $colours--light-two
+  ),
+  grey-one: (
+    colour: $colours--grey-one
+  ),
+  grey-two: (
+    colour: $colours--grey-two
+  ),
+  grey-three: (
+    colour: $colours--grey-three
+  ),
+  success: (
+    colour: $colours--success
+  ),
+  info: (
+    colour:$colours--info
+  ),
+  warning: (
+    colour: $colours--warning
+  ),
+  danger: (
+    colour: $colours--danger
+  ),
+  transparent: (
+    colour: $colours--transparent
+  )
+);
