@@ -888,7 +888,8 @@
   text-transform: uppercase;
   color: #31323e;
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0; }
   .heading--extra-small {
     font-size: 15px; }
     @media screen and (max-width: 1200px) {
