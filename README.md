@@ -1,19 +1,47 @@
-# A Useful Sass Library
+# Lucid
+## Web Page Styling Made Clear
 
-A Useful Sass Library is a library of classes and mixins for use in web applications
-using SASS.
+As web developers, we all know how difficult it can be to start styling a new project, or refactor an old one.
 
-The library includes a number of useful mixins for such things as easily applying retina images
-to elements, applying certain styles above or below a certain breakpoint, and for
-adding a default box-shadow using a specified 'level'.
+You have to add relevant and understandable classes to your HTML, trying to make sure that you won't repeat yourself
+or run into cascade problems when it comes to writing your CSS.
 
-Also included are classes which can be used to quickly style and layout your HTML.
-These include:
+Then you have to create your stylesheets, make sure that they're not too bloated or complex, and make sure
+that you're using consistent styling across multiple elements.
 
-* Helper classes for applying padding of various sizes to an element
-* Helper classes for applying margins of various sizes to an element
-* Helper classes for applying depth (z-index) to elements
-* Helper classes for aligning and justifying elements using the `flexbox` layout
+It can be very tricky to ensure that you're not going to make a mess of things, or lose track of what you've written
+in the past.
+
+Additionally, it can be a nightmare to change things when designs are changed if you haven't been very thorough
+in the setup of your stylesheets.
+
+This is where **Lucid** comes to the rescue.
+
+Lucid is a library written in SASS which makes it easy to go from design to implementation, and makes it
+very easy to adjust the implementation when designs are changed.
+
+Lucid allows you to configure your project settings - such as the colours you will use, fonts, padding sizes, etc. - and
+generates (or provides out of the box) a number of CSS classes which you can use directly in your HTML.
+
+For example, you can configure Lucid with all the colours that you will need to use in your application and assign
+labels to them, and lucid will generate classes for these colours which can be used to style the background colour,
+text colour, or border colour of an element, i.e. `dark-one: #000` would generate the following classes:
+
+```scss
+.bg--dark-one { background-color: #000; }
+.text--dark-one { color: #000; }
+.border--dark-one { border-color: #000; }
+```
+
+### Configuring Colour Classes
+
+TODO: complete
+
+### Configuring Layout Classes
+
+TODO: complete
+
+-----
 
 ## Installation
 You can install this package with `bower`, via:
