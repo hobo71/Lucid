@@ -1,0 +1,23 @@
+
+// width.scss
+
+/**
+ * Width Classes
+ */
+
+/// Width classes
+/// @group width
+.width {
+  
+  &--full {
+    width: 100%;
+  }
+  
+  &--half {
+    width: 50%;
+  }
+  
+  &--quarter {
+    width: 25%;
+  }
+}

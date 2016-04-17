@@ -1,0 +1,19 @@
+
+// height.scss
+
+/**
+ * Height Classes
+ */
+
+/// Height classes
+/// @group height
+.height {
+  
+  &--full {
+    height: 100%;
+  }
+  
+  &--half {
+    height: 50%;
+  }
+}
